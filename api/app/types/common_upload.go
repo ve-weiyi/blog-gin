@@ -1,0 +1,29 @@
+package types
+
+// 获取上传凭证请求
+type GetUploadTokenReq struct {
+	FileName      string  `json:"file_name"`               // 文件名称
+	FileBase      *string `json:"file_base,optional"`      // 文件目录
+	ExpireSeconds *int    `json:"expire_seconds,optional"` // 凭证有效期（秒），默认1小时
+}
+
+// 获取上传凭证响应（完整的UploadToken结构）
+type GetUploadTokenResp struct {
+	UploadUrl string            `json:"upload_url"` // 上传地址
+	Token     string            `json:"token"`      // 上传凭证/Token
+	Policy    string            `json:"policy"`     // 上传策略
+	Signature string            `json:"signature"`  // 签名
+	FileKey   string            `json:"file_key"`   // 文件Key/路径
+	AccessUrl string            `json:"access_url"` // 上传成功后的访问URL
+	ExpireAt  int64             `json:"expire_at"`  // 凭证过期时间戳（秒）
+	ExtraData map[string]string `json:"extra_data"` // 额外数据
+}
+
+type UploadFileReq struct {
+	File     *interface{} `form:"file,optional"`      // 文件
+	FileBase *string      `form:"file_base,optional"` // 文件目录
+}
+
+type UploadFileResp struct {
+	FileInfo FileInfoVO `json:"file_info"` // 文件信息
+}

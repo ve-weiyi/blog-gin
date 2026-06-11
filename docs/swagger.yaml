@@ -1,0 +1,6397 @@
+definitions:
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      verify_code:
+        description: 验证码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq:
+    properties:
+      mobile:
+        description: 手机号
+        type: string
+      verify_code:
+        description: 验证码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq:
+    properties:
+      code:
+        description: 授权码
+        type: string
+      platform:
+        description: 平台
+        type: string
+      state:
+        description: 状态
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      email:
+        description: 邮箱
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      email:
+        description: 邮箱
+        type: string
+      nickname:
+        description: 昵称
+        type: string
+      password:
+        description: 密码
+        type: string
+      username:
+        description: 用户名
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO:
+    properties:
+      file_base:
+        description: 文件目录
+        type: string
+      file_name:
+        description: 文件名称
+        type: string
+      file_size:
+        description: 文件大小
+        type: integer
+      file_type:
+        description: 文件类型
+        type: string
+      file_url:
+        description: 上传路径
+        type: string
+      updated_at:
+        description: 更新时间
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq:
+    properties:
+      height:
+        description: 高度
+        type: integer
+      width:
+        description: 宽度
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp:
+    properties:
+      captcha_base64:
+        description: 验证码base64
+        type: string
+      captcha_code:
+        description: 验证码
+        type: string
+      captcha_key:
+        description: 验证码key
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp:
+    properties:
+      browser:
+        description: 浏览器
+        type: string
+      device_id:
+        description: 设备ID
+        type: string
+      id:
+        description: 访客唯一ID
+        type: integer
+      ip_address:
+        description: IP地址
+        type: string
+      ip_source:
+        description: IP归属地
+        type: string
+      os:
+        description: 操作系统
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq:
+    properties:
+      platform:
+        description: 平台
+        type: string
+      state:
+        description: 状态
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp:
+    properties:
+      authorize_url:
+        description: 授权地址
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq:
+    properties:
+      expire_seconds:
+        description: 凭证有效期（秒），默认1小时
+        type: integer
+      file_base:
+        description: 文件目录
+        type: string
+      file_name:
+        description: 文件名称
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp:
+    properties:
+      access_url:
+        description: 上传成功后的访问URL
+        type: string
+      expire_at:
+        description: 凭证过期时间戳（秒）
+        type: integer
+      extra_data:
+        additionalProperties:
+          type: string
+        description: 额外数据
+        type: object
+      file_key:
+        description: 文件Key/路径
+        type: string
+      policy:
+        description: 上传策略
+        type: string
+      signature:
+        description: 签名
+        type: string
+      token:
+        description: 上传凭证/Token
+        type: string
+      upload_url:
+        description: 上传地址
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO:
+    properties:
+      browser:
+        description: 浏览器
+        type: string
+      device_id:
+        description: 设备ID
+        type: string
+      ip_address:
+        description: IP地址
+        type: string
+      ip_source:
+        description: IP归属地
+        type: string
+      os:
+        description: 操作系统
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp:
+    properties:
+      scope:
+        description: 作用域
+        type: string
+      token:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token'
+      user_id:
+        description: 用户id
+        type: string
+      user_type:
+        description: 用户类型：user-普通用户 admin-管理员
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      mobile:
+        description: 手机号
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq:
+    properties:
+      code:
+        description: 授权码
+        type: string
+      platform:
+        description: 平台
+        type: string
+      state:
+        description: 状态
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult:
+    properties:
+      list: {}
+      page:
+        type: integer
+      page_size:
+        type: integer
+      total:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO:
+    properties:
+      carousel_covers:
+        items:
+          type: string
+        type: array
+      created_at:
+        type: integer
+      id:
+        type: integer
+      is_carousel:
+        type: integer
+      page_cover:
+        type: string
+      page_label:
+        type: string
+      page_name:
+        type: string
+      updated_at:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq:
+    properties:
+      account:
+        description: 账号/手机号/邮箱
+        type: string
+      captcha_code:
+        description: 图形验证码
+        type: string
+      captcha_key:
+        description: 图形验证码key
+        type: string
+      password:
+        description: 密码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp:
+    properties:
+      description:
+        type: string
+      env:
+        type: string
+      name:
+        type: string
+      runtime:
+        type: string
+      version:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq:
+    properties:
+      album_name:
+        type: string
+      is_delete:
+        type: integer
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq:
+    properties:
+      article_title:
+        type: string
+      article_type:
+        type: integer
+      category_name:
+        type: string
+      is_delete:
+        type: integer
+      is_top:
+        type: integer
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        type: integer
+      tag_name:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq:
+    properties:
+      category_name:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        type: integer
+      type:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq:
+    properties:
+      link_name:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_name:
+        type: string
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      tag_name:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq:
+    properties:
+      grant_type:
+        description: 授权类型
+        type: string
+      refresh_token:
+        description: 刷新令牌
+        type: string
+      user_id:
+        description: 用户id
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      confirm_password:
+        description: 确认密码
+        type: string
+      email:
+        description: 邮箱
+        type: string
+      password:
+        description: 新密码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode:
+    properties:
+      alipay_qr_code:
+        type: string
+      weixin_qr_code:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      type:
+        description: login / register / reset_password / bind_email
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq:
+    properties:
+      mobile:
+        description: 手机号
+        type: string
+      type:
+        description: login / reset_password / bind_phone
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo:
+    properties:
+      enabled:
+        type: boolean
+      link_url:
+        type: string
+      name:
+        type: string
+      platform:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo:
+    properties:
+      authorize_url:
+        type: string
+      enabled:
+        type: boolean
+      name:
+        type: string
+      platform:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token:
+    properties:
+      access_token:
+        description: 访问令牌：用于接口访问，有效期短
+        type: string
+      expires_in:
+        description: AccessToken 有效期（秒），如 3600（1小时）
+        type: integer
+      refresh_expires_at:
+        description: RefreshToken 过期时间戳（秒）
+        type: integer
+      refresh_expires_in:
+        description: RefreshToken 有效期（秒），如 604800（7天）
+        type: integer
+      refresh_token:
+        description: 刷新令牌：仅用于刷新 AccessToken，有效期长
+        type: string
+      token_type:
+        description: Token 类型（如 "Bearer"）
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq:
+    properties:
+      platform:
+        description: 平台
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq:
+    properties:
+      avatar:
+        description: 用户头像
+        type: string
+      gender:
+        description: 性别 0未知 1男 2女
+        type: integer
+      intro:
+        description: 简介
+        type: string
+      nickname:
+        type: string
+      website:
+        description: 网站
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq:
+    properties:
+      file:
+        description: 文件
+      file_base:
+        description: 文件目录
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp:
+    properties:
+      file_info:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO'
+        description: 文件信息
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO:
+    properties:
+      avatar:
+        type: string
+      nickname:
+        type: string
+      user_id:
+        type: string
+      user_type:
+        type: string
+      username:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo:
+    properties:
+      avatar:
+        description: 头像
+        type: string
+      created_at:
+        description: 创建时间
+        type: integer
+      nickname:
+        description: 昵称
+        type: string
+      open_id:
+        description: 平台用户id
+        type: string
+      platform:
+        description: 平台
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO:
+    properties:
+      admin_url:
+        type: string
+      reward_qr_code:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode'
+      social_login_list:
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo'
+        type: array
+      social_url_list:
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo'
+        type: array
+      tourist_avatar:
+        type: string
+      user_avatar:
+        type: string
+      website_feature:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature'
+      website_info:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo'
+      websocket_url:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature:
+    properties:
+      is_ai_assistant:
+        type: integer
+      is_chat_room:
+        type: integer
+      is_comment_review:
+        type: integer
+      is_email_notice:
+        type: integer
+      is_message_review:
+        type: integer
+      is_music_player:
+        type: integer
+      is_reward:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo:
+    properties:
+      website_author:
+        type: string
+      website_avatar:
+        type: string
+      website_create_time:
+        type: string
+      website_intro:
+        type: string
+      website_name:
+        type: string
+      website_notice:
+        type: string
+      website_record_no:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      verify_code:
+        description: 验证码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq:
+    properties:
+      mobile:
+        description: 手机号
+        type: string
+      verify_code:
+        description: 验证码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq:
+    properties:
+      code:
+        description: 授权码
+        type: string
+      platform:
+        description: 平台
+        type: string
+      state:
+        description: 状态
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      email:
+        description: 邮箱
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      email:
+        description: 邮箱
+        type: string
+      nickname:
+        description: 昵称
+        type: string
+      password:
+        description: 密码
+        type: string
+      username:
+        description: 用户名
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO:
+    properties:
+      file_base:
+        description: 文件目录
+        type: string
+      file_name:
+        description: 文件名称
+        type: string
+      file_size:
+        description: 文件大小
+        type: integer
+      file_type:
+        description: 文件类型
+        type: string
+      file_url:
+        description: 上传路径
+        type: string
+      updated_at:
+        description: 更新时间
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq:
+    properties:
+      album_id:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq:
+    properties:
+      article_id:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq:
+    properties:
+      height:
+        description: 高度
+        type: integer
+      width:
+        description: 宽度
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp:
+    properties:
+      captcha_base64:
+        description: 验证码base64
+        type: string
+      captcha_code:
+        description: 验证码
+        type: string
+      captcha_key:
+        description: 验证码key
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp:
+    properties:
+      browser:
+        description: 浏览器
+        type: string
+      device_id:
+        description: 设备ID
+        type: string
+      id:
+        description: 访客唯一ID
+        type: integer
+      ip_address:
+        description: IP地址
+        type: string
+      ip_source:
+        description: IP归属地
+        type: string
+      os:
+        description: 操作系统
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq:
+    properties:
+      platform:
+        description: 平台
+        type: string
+      state:
+        description: 状态
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp:
+    properties:
+      authorize_url:
+        description: 授权地址
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq:
+    properties:
+      talk_id:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq:
+    properties:
+      expire_seconds:
+        description: 凭证有效期（秒），默认1小时
+        type: integer
+      file_base:
+        description: 文件目录
+        type: string
+      file_name:
+        description: 文件名称
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp:
+    properties:
+      access_url:
+        description: 上传成功后的访问URL
+        type: string
+      expire_at:
+        description: 凭证过期时间戳（秒）
+        type: integer
+      extra_data:
+        additionalProperties:
+          type: string
+        description: 额外数据
+        type: object
+      file_key:
+        description: 文件Key/路径
+        type: string
+      policy:
+        description: 上传策略
+        type: string
+      signature:
+        description: 签名
+        type: string
+      token:
+        description: 上传凭证/Token
+        type: string
+      upload_url:
+        description: 上传地址
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp:
+    properties:
+      scope:
+        description: 作用域
+        type: string
+      token:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.Token'
+      user_id:
+        description: 用户id
+        type: string
+      user_type:
+        description: 用户类型：user-普通用户 app-管理员
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      mobile:
+        description: 手机号
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq:
+    properties:
+      code:
+        description: 授权码
+        type: string
+      platform:
+        description: 平台
+        type: string
+      state:
+        description: 状态
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult:
+    properties:
+      list: {}
+      page:
+        type: integer
+      page_size:
+        type: integer
+      total:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO:
+    properties:
+      id:
+        description: 页面ID
+        type: integer
+      is_carousel:
+        description: 是否轮播
+        type: integer
+      page_cover:
+        description: 页面封面
+        type: string
+      page_label:
+        description: 页面标签
+        type: string
+      page_name:
+        description: 页面名称
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq:
+    properties:
+      account:
+        description: 账号/手机号/邮箱
+        type: string
+      captcha_code:
+        description: 图形验证码
+        type: string
+      captcha_key:
+        description: 图形验证码key
+        type: string
+      password:
+        description: 密码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp:
+    properties:
+      description:
+        type: string
+      env:
+        type: string
+      name:
+        type: string
+      runtime:
+        type: string
+      version:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq:
+    properties:
+      article_title:
+        type: string
+      category_name:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      tag_name:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq:
+    properties:
+      category_name:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      parent_id:
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      topic_id:
+        type: integer
+      type:
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      tag_name:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq:
+    properties:
+      grant_type:
+        description: 授权类型
+        type: string
+      refresh_token:
+        description: 刷新令牌
+        type: string
+      user_id:
+        description: 用户id
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq:
+    properties:
+      code:
+        description: 验证码
+        type: string
+      confirm_password:
+        description: 确认密码
+        type: string
+      email:
+        description: 邮箱
+        type: string
+      password:
+        description: 新密码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode:
+    properties:
+      alipay_qr_code:
+        description: 支付宝二维码
+        type: string
+      weixin_qr_code:
+        description: 微信二维码
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      type:
+        description: login / register / reset_password / bind_email
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq:
+    properties:
+      mobile:
+        description: 手机号
+        type: string
+      type:
+        description: login / reset_password / bind_phone
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp:
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo:
+    properties:
+      enabled:
+        description: 是否启用
+        type: boolean
+      link_url:
+        description: 链接地址
+        type: string
+      name:
+        description: 名称-微信
+        type: string
+      platform:
+        description: 平台-wechat
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo:
+    properties:
+      authorize_url:
+        description: 授权地址
+        type: string
+      enabled:
+        description: 是否启用
+        type: boolean
+      name:
+        description: 名称-微信
+        type: string
+      platform:
+        description: 平台-wechat
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.Token:
+    properties:
+      access_token:
+        description: 访问令牌：用于接口访问，有效期短
+        type: string
+      expires_in:
+        description: AccessToken 有效期（秒），如 3600（1小时）
+        type: integer
+      refresh_expires_at:
+        description: RefreshToken 过期时间戳（秒）
+        type: integer
+      refresh_expires_in:
+        description: RefreshToken 有效期（秒），如 604800（7天）
+        type: integer
+      refresh_token:
+        description: 刷新令牌：仅用于刷新 AccessToken，有效期长
+        type: string
+      token_type:
+        description: Token 类型（如 "Bearer"）
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq:
+    properties:
+      platform:
+        description: 平台
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq:
+    properties:
+      avatar:
+        description: 头像URL
+        type: string
+      gender:
+        description: 性别 0未知 1男 2女
+        type: integer
+      intro:
+        description: 简介
+        type: string
+      nickname:
+        description: 昵称
+        type: string
+      website:
+        description: 网站
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq:
+    properties:
+      file:
+        description: 文件
+      file_base:
+        description: 文件目录
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp:
+    properties:
+      file_info:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO'
+        description: 文件信息
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO:
+    properties:
+      avatar:
+        type: string
+      nickname:
+        type: string
+      user_id:
+        type: string
+      user_type:
+        type: string
+      username:
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo:
+    properties:
+      avatar:
+        description: 头像
+        type: string
+      created_at:
+        description: 创建时间
+        type: integer
+      nickname:
+        description: 昵称
+        type: string
+      open_id:
+        description: 平台用户id
+        type: string
+      platform:
+        description: 平台
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO:
+    properties:
+      admin_url:
+        description: 后台地址
+        type: string
+      reward_qr_code:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode'
+        description: 打赏二维码
+      social_login_list:
+        description: 用户第三方登录列表
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo'
+        type: array
+      social_url_list:
+        description: 作者社交地址列表
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo'
+        type: array
+      tourist_avatar:
+        description: 游客头像
+        type: string
+      user_avatar:
+        description: 用户头像
+        type: string
+      website_feature:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature'
+        description: 网站功能
+      website_info:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo'
+        description: 网站信息
+      websocket_url:
+        description: websocket地址
+        type: string
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature:
+    properties:
+      is_ai_assistant:
+        description: 是否开启AI助手
+        type: integer
+      is_chat_room:
+        description: 是否开启聊天室
+        type: integer
+      is_comment_review:
+        description: 是否开启评论审核
+        type: integer
+      is_email_notice:
+        description: 是否开启邮件通知
+        type: integer
+      is_message_review:
+        description: 是否开启留言审核
+        type: integer
+      is_music_player:
+        description: 是否开启音乐播放器
+        type: integer
+      is_reward:
+        description: 是否开启打赏
+        type: integer
+    type: object
+  github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo:
+    properties:
+      website_author:
+        description: 网站作者
+        type: string
+      website_avatar:
+        description: 网站头像
+        type: string
+      website_create_time:
+        description: 网站创建时间
+        type: string
+      website_intro:
+        description: 网站介绍
+        type: string
+      website_name:
+        description: 网站名称
+        type: string
+      website_notice:
+        description: 网站公告
+        type: string
+      website_record_no:
+        description: 网站备案号
+        type: string
+    type: object
+  types.AboutMeVO:
+    properties:
+      content:
+        type: string
+    type: object
+  types.Album:
+    properties:
+      album_cover:
+        description: 相册封面
+        type: string
+      album_desc:
+        description: 相册描述
+        type: string
+      album_name:
+        description: 相册名
+        type: string
+      id:
+        description: 主键
+        type: integer
+    type: object
+  types.AlbumVO:
+    properties:
+      album_cover:
+        type: string
+      album_desc:
+        type: string
+      album_name:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      is_delete:
+        type: integer
+      photo_count:
+        type: integer
+      status:
+        type: integer
+      updated_at:
+        type: integer
+    type: object
+  types.ApiVO:
+    properties:
+      children:
+        items:
+          $ref: '#/definitions/types.ApiVO'
+        type: array
+      created_at:
+        description: 创建时间
+        type: integer
+      id:
+        description: 主键id
+        type: integer
+      method:
+        description: api请求方法
+        type: string
+      name:
+        description: api名称
+        type: string
+      parent_id:
+        description: 分组id
+        type: integer
+      path:
+        description: api路径
+        type: string
+      status:
+        description: 状态 0正常 1禁用
+        type: integer
+      traceable:
+        description: 是否追溯操作记录 0不需要，1需要
+        type: integer
+      updated_at:
+        description: 更新时间
+        type: integer
+    type: object
+  types.ArticleDetails:
+    properties:
+      article_content:
+        type: string
+      article_cover:
+        type: string
+      article_title:
+        type: string
+      article_type:
+        type: integer
+      author:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO'
+      category_name:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      is_top:
+        type: integer
+      last_article:
+        $ref: '#/definitions/types.ArticlePreview'
+      like_count:
+        type: integer
+      newest_article_list:
+        items:
+          $ref: '#/definitions/types.ArticlePreview'
+        type: array
+      next_article:
+        $ref: '#/definitions/types.ArticlePreview'
+      original_url:
+        type: string
+      recommend_article_list:
+        items:
+          $ref: '#/definitions/types.ArticlePreview'
+        type: array
+      status:
+        type: integer
+      tag_name_list:
+        items:
+          type: string
+        type: array
+      updated_at:
+        type: integer
+      views_count:
+        type: integer
+    type: object
+  types.ArticlePreview:
+    properties:
+      article_cover:
+        type: string
+      article_title:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      like_count:
+        type: integer
+      views_count:
+        type: integer
+    type: object
+  types.ArticleStatisticsVO:
+    properties:
+      count:
+        type: integer
+      date:
+        type: string
+    type: object
+  types.ArticleVO:
+    properties:
+      article_content:
+        type: string
+      article_cover:
+        type: string
+      article_title:
+        type: string
+      article_type:
+        type: integer
+      category_name:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      is_delete:
+        type: integer
+      is_top:
+        type: integer
+      like_count:
+        type: integer
+      original_url:
+        type: string
+      status:
+        type: integer
+      tag_name_list:
+        items:
+          type: string
+        type: array
+      updated_at:
+        type: integer
+      views_count:
+        type: integer
+    type: object
+  types.ArticleViewVO:
+    properties:
+      article_title:
+        type: string
+      id:
+        type: integer
+      view_count:
+        type: integer
+    type: object
+  types.BatchMarkRecordsReadReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.BatchResp:
+    properties:
+      success_count:
+        type: integer
+    type: object
+  types.CategoryOverviewVO:
+    properties:
+      article_count:
+        type: integer
+      category_name:
+        type: string
+      id:
+        type: integer
+    type: object
+  types.CategoryVO:
+    properties:
+      article_count:
+        type: integer
+      category_name:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      updated_at:
+        type: integer
+    type: object
+  types.CleanApiResp:
+    properties:
+      success_count:
+        description: 清空成功数量
+        type: integer
+    type: object
+  types.CleanMenuReq:
+    type: object
+  types.CleanMenuResp:
+    properties:
+      success_count:
+        description: 清空成功数量
+        type: integer
+    type: object
+  types.CreateAlbumReq:
+    properties:
+      album_cover:
+        type: string
+      album_desc:
+        type: string
+      album_name:
+        type: string
+      status:
+        type: integer
+    type: object
+  types.CreateApiReq:
+    properties:
+      method:
+        description: api请求方法
+        type: string
+      name:
+        description: api名称
+        type: string
+      parent_id:
+        description: 分组id
+        type: integer
+      path:
+        description: api路径
+        type: string
+      status:
+        description: 状态 0正常 1禁用
+        type: integer
+      traceable:
+        description: 是否追溯操作记录 0不需要，1需要
+        type: integer
+    type: object
+  types.CreateArticleReq:
+    properties:
+      article_content:
+        type: string
+      article_cover:
+        type: string
+      article_title:
+        type: string
+      article_type:
+        type: integer
+      category_name:
+        type: string
+      is_top:
+        type: integer
+      original_url:
+        type: string
+      status:
+        type: integer
+      tag_name_list:
+        items:
+          type: string
+        type: array
+    type: object
+  types.CreateCategoryReq:
+    properties:
+      category_name:
+        type: string
+    type: object
+  types.CreateCommentReq:
+    properties:
+      comment_content:
+        type: string
+      parent_id:
+        type: integer
+      reply_id:
+        type: integer
+      reply_user_id:
+        type: string
+      status:
+        type: integer
+      topic_id:
+        type: integer
+      type:
+        type: integer
+    type: object
+  types.CreateFriendReq:
+    properties:
+      link_address:
+        type: string
+      link_avatar:
+        type: string
+      link_intro:
+        type: string
+      link_name:
+        type: string
+    type: object
+  types.CreateMenuReq:
+    properties:
+      always_show:
+        description: 是否一直显示菜单
+        type: integer
+      children:
+        items:
+          $ref: '#/definitions/types.CreateMenuReq'
+        type: array
+      component:
+        description: Layout组件
+        type: string
+      icon:
+        description: 菜单图标
+        type: string
+      keep_alive:
+        description: 是否缓存
+        type: integer
+      name:
+        description: 路由名字
+        type: string
+      params:
+        description: 参数
+        items:
+          $ref: '#/definitions/types.MenuMetaParams'
+        type: array
+      parent_id:
+        description: 父id
+        type: integer
+      path:
+        description: 路由地址
+        type: string
+      perm:
+        description: 权限标识
+        type: string
+      rank:
+        description: 排序
+        type: integer
+      redirect:
+        description: 路由重定向
+        type: string
+      status:
+        description: 状态 0正常 1禁用
+        type: integer
+      title:
+        description: 菜单标题
+        type: string
+      type:
+        description: 菜单类型（0代表目录、1代表菜单、2代表按钮、3代表外链）
+        type: string
+      visible:
+        description: 菜单是否可见
+        type: integer
+    type: object
+  types.CreateMessageReq:
+    properties:
+      message_content:
+        type: string
+    type: object
+  types.CreateNotifyMessageReq:
+    properties:
+      category:
+        type: string
+      content:
+        type: string
+      level:
+        type: string
+      target_ids:
+        type: string
+      target_type:
+        type: string
+      title:
+        type: string
+    type: object
+  types.CreateNotifyTemplateReq:
+    properties:
+      channel:
+        type: string
+      code:
+        type: string
+      content:
+        type: string
+      enabled:
+        type: integer
+      scene:
+        type: string
+      title:
+        type: string
+    type: object
+  types.CreatePageReq:
+    properties:
+      carousel_covers:
+        items:
+          type: string
+        type: array
+      is_carousel:
+        type: integer
+      page_cover:
+        type: string
+      page_label:
+        type: string
+      page_name:
+        type: string
+    type: object
+  types.CreatePhotoReq:
+    properties:
+      album_id:
+        type: integer
+      photo_desc:
+        type: string
+      photo_name:
+        type: string
+      photo_src:
+        type: string
+    type: object
+  types.CreateRoleReq:
+    properties:
+      is_default:
+        description: 是否默认角色 0-否 1-是（必填）
+        type: integer
+      parent_id:
+        description: 父角色ID（可选，默认顶级角色）
+        type: integer
+      role_comment:
+        description: 角色备注（必填）
+        type: string
+      role_key:
+        description: 角色标识（必填，唯一）
+        type: string
+      role_label:
+        description: 角色名称（必填）
+        type: string
+      status:
+        description: 状态 0-正常 1-禁用（必填）
+        type: integer
+    type: object
+  types.CreateTagReq:
+    properties:
+      tag_name:
+        type: string
+    type: object
+  types.CreateTalkReq:
+    properties:
+      content:
+        type: string
+      img_list:
+        items:
+          type: string
+        type: array
+      is_top:
+        type: integer
+      status:
+        type: integer
+    type: object
+  types.DashboardStats:
+    properties:
+      active_users:
+        type: integer
+      date:
+        type: string
+      new_users:
+        type: integer
+      pv_count:
+        type: integer
+      total_pv_count:
+        type: integer
+      total_users:
+        type: integer
+      total_uv_count:
+        type: integer
+      uv_count:
+        type: integer
+    type: object
+  types.DeactivateAccountReq:
+    properties:
+      password:
+        description: 确认密码
+        type: string
+      reason:
+        description: 停用原因
+        type: string
+    type: object
+  types.DeactivateAccountResp:
+    properties:
+      can_reactivate_until:
+        description: 可恢复截止时间（时间戳，毫秒）
+        type: integer
+      cooling_period_days:
+        description: 冷静期天数
+        type: integer
+    type: object
+  types.DeleteAlbumReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteApiReq:
+    properties:
+      ids:
+        description: 主键id
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteArticleReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  types.DeleteCategoryReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteCommentReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteFriendReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteLoginLogReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteMenuReq:
+    properties:
+      ids:
+        description: 主键id
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteMessageReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteNotifyMessageReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteNotifyRecordReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteNotifyTemplateReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteOperationLogReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeletePageReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeletePhotoReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteRoleReq:
+    properties:
+      ids:
+        description: 角色ID列表
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteTagReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteTalkReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteUploadLogReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.DeleteVisitLogReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.ExportArticleReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
+  types.FriendVO:
+    properties:
+      created_at:
+        type: integer
+      id:
+        type: integer
+      link_address:
+        type: string
+      link_avatar:
+        type: string
+      link_intro:
+        type: string
+      link_name:
+        type: string
+      updated_at:
+        type: integer
+    type: object
+  types.GetAboutMeReq:
+    type: object
+  types.GetAboutMeResp:
+    properties:
+      content:
+        type: string
+    type: object
+  types.GetApiReq:
+    properties:
+      id:
+        description: 主键id
+        type: integer
+    type: object
+  types.GetArticleAnalyticsResp:
+    properties:
+      article_statistics:
+        items:
+          $ref: '#/definitions/types.ArticleStatisticsVO'
+        type: array
+      article_view_ranks:
+        items:
+          $ref: '#/definitions/types.ArticleViewVO'
+        type: array
+      category_list:
+        items:
+          $ref: '#/definitions/types.CategoryOverviewVO'
+        type: array
+      tag_list:
+        items:
+          $ref: '#/definitions/types.TagOverviewVO'
+        type: array
+    type: object
+  types.GetBlogHomeInfoReq:
+    type: object
+  types.GetBlogHomeInfoResp:
+    properties:
+      article_count:
+        description: 文章数量
+        type: integer
+      category_count:
+        description: 分类数量
+        type: integer
+      notice_list:
+        description: 通知列表
+        items:
+          $ref: '#/definitions/types.NoticeVO'
+        type: array
+      page_list:
+        description: 页面列表
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO'
+        type: array
+      tag_count:
+        description: 标签数量
+        type: integer
+      total_page_view_count:
+        description: 总浏览量
+        type: integer
+      total_user_view_count:
+        description: 总服务量
+        type: integer
+      website_config:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO'
+        description: 网站配置
+    type: object
+  types.GetMenuReq:
+    properties:
+      id:
+        description: 主键
+        type: integer
+    type: object
+  types.GetNotifyMessageReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  types.GetNotifyTemplateReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  types.GetRolePermissionsReq:
+    properties:
+      role_id:
+        description: 角色ID
+        type: integer
+    type: object
+  types.GetRoleReq:
+    properties:
+      ids:
+        description: 角色ID列表
+        items:
+          type: integer
+        type: array
+    type: object
+  types.GetStatsDashboardResp:
+    properties:
+      article_count:
+        type: integer
+      message_count:
+        type: integer
+      pv_growth_rate:
+        type: number
+      today:
+        $ref: '#/definitions/types.DashboardStats'
+      user_count:
+        type: integer
+      user_growth_rate:
+        type: number
+      uv_growth_rate:
+        type: number
+    type: object
+  types.GetUserApisResp:
+    properties:
+      list:
+        items:
+          $ref: '#/definitions/types.UserApi'
+        type: array
+    type: object
+  types.GetUserDetailReq:
+    properties:
+      user_id:
+        description: 用户ID (UUID)
+        type: string
+    type: object
+  types.GetUserDetailResp:
+    properties:
+      avatar:
+        description: 用户头像
+        type: string
+      created_at:
+        type: integer
+      email:
+        description: 用户邮箱
+        type: string
+      id:
+        description: 用户ID
+        type: integer
+      ip_address:
+        description: IP地址
+        type: string
+      ip_source:
+        description: IP归属地
+        type: string
+      last_login:
+        $ref: '#/definitions/types.UserLastLogin'
+      mobile:
+        description: 用户手机号
+        type: string
+      nickname:
+        description: 用户昵称
+        type: string
+      register_type:
+        description: 注册方式
+        type: string
+      roles:
+        items:
+          $ref: '#/definitions/types.UserRoleLabel'
+        type: array
+      status:
+        description: 状态：0-禁用 1-正常 2-冻结
+        type: integer
+      updated_at:
+        type: integer
+      user_id:
+        description: 用户ID (UUID)
+        type: string
+      username:
+        description: 用户名
+        type: string
+    type: object
+  types.GetUserGeoStatsReq:
+    properties:
+      user_type:
+        type: integer
+    type: object
+  types.GetUserGeoStatsResp:
+    properties:
+      users:
+        items:
+          $ref: '#/definitions/types.RegionStatVO'
+        type: array
+      visitors:
+        items:
+          $ref: '#/definitions/types.RegionStatVO'
+        type: array
+    type: object
+  types.GetUserLikeReq:
+    type: object
+  types.GetUserLikeResp:
+    properties:
+      article_like_set:
+        description: 文章点赞集合
+        items:
+          type: integer
+        type: array
+      comment_like_set:
+        description: 评论点赞集合
+        items:
+          type: integer
+        type: array
+      talk_like_set:
+        description: 说说点赞集合
+        items:
+          type: integer
+        type: array
+    type: object
+  types.GetUserMenusResp:
+    properties:
+      list:
+        items:
+          $ref: '#/definitions/types.UserMenu'
+        type: array
+    type: object
+  types.GetUserProfileResp:
+    properties:
+      avatar:
+        description: 头像URL
+        type: string
+      balance:
+        description: 余额
+        type: number
+      coin:
+        description: 账户积分
+        type: integer
+      created_at:
+        description: 注册时间
+        type: integer
+      email:
+        description: 邮箱
+        type: string
+      gender:
+        description: 性别 0未知 1男 2女
+        type: integer
+      intro:
+        description: 简介
+        type: string
+      mobile:
+        description: 手机号
+        type: string
+      nickname:
+        description: 昵称
+        type: string
+      plan:
+        description: 会员计划
+        type: string
+      status:
+        description: 账号状态
+        type: integer
+      third_party:
+        description: 第三方绑定
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo'
+        type: array
+      user_id:
+        description: 用户ID（UUID）
+        type: string
+      username:
+        description: 用户名
+        type: string
+      website:
+        description: 网站
+        type: string
+    type: object
+  types.GetUserRolesResp:
+    properties:
+      list:
+        items:
+          $ref: '#/definitions/types.UserRole'
+        type: array
+    type: object
+  types.GetVisitTrendReq:
+    properties:
+      end_date:
+        type: string
+      start_date:
+        type: string
+    type: object
+  types.GetVisitTrendResp:
+    properties:
+      list:
+        items:
+          $ref: '#/definitions/types.DashboardStats'
+        type: array
+    type: object
+  types.LikeArticleReq:
+    properties:
+      article_id:
+        type: integer
+    type: object
+  types.LikeCommentReq:
+    properties:
+      comment_id:
+        type: integer
+    type: object
+  types.LikeTalkReq:
+    properties:
+      talk_id:
+        type: integer
+    type: object
+  types.MarkAllRecordsReadReq:
+    properties:
+      user_id:
+        type: string
+    type: object
+  types.MarkRecordReadReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  types.MenuMetaParams:
+    properties:
+      key:
+        type: string
+      value:
+        type: string
+    type: object
+  types.MenuVO:
+    properties:
+      always_show:
+        description: 是否一直显示菜单
+        type: integer
+      children:
+        items:
+          $ref: '#/definitions/types.MenuVO'
+        type: array
+      component:
+        description: Layout组件
+        type: string
+      created_at:
+        description: 创建时间
+        type: integer
+      icon:
+        description: 菜单图标
+        type: string
+      id:
+        description: 主键
+        type: integer
+      keep_alive:
+        description: 是否缓存
+        type: integer
+      name:
+        description: 路由名字
+        type: string
+      params:
+        description: 参数
+        items:
+          $ref: '#/definitions/types.MenuMetaParams'
+        type: array
+      parent_id:
+        description: 父id
+        type: integer
+      path:
+        description: 路由地址
+        type: string
+      perm:
+        description: 权限标识
+        type: string
+      rank:
+        description: 排序
+        type: integer
+      redirect:
+        description: 路由重定向
+        type: string
+      status:
+        description: 状态 0正常 1禁用
+        type: integer
+      title:
+        description: 菜单标题
+        type: string
+      type:
+        description: 菜单类型（0代表目录、1代表菜单、2代表按钮、3代表外链）
+        type: string
+      updated_at:
+        description: 更新时间
+        type: integer
+      visible:
+        description: 菜单是否可见
+        type: integer
+    type: object
+  types.NoticeVO:
+    properties:
+      content:
+        description: 通知内容
+        type: string
+      id:
+        description: 主键ID
+        type: integer
+      level:
+        description: 通知等级
+        type: string
+      publish_time:
+        description: 发布时间
+        type: integer
+      title:
+        description: 通知标题
+        type: string
+      type:
+        description: 通知类型
+        type: string
+    type: object
+  types.NotifyMessageVO:
+    properties:
+      category:
+        type: string
+      content:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: string
+      published_at:
+        type: integer
+      published_by:
+        type: string
+      status:
+        type: string
+      target_ids:
+        type: string
+      target_type:
+        type: string
+      title:
+        type: string
+      updated_at:
+        type: integer
+    type: object
+  types.NotifyTemplateVO:
+    properties:
+      channel:
+        type: string
+      code:
+        type: string
+      content:
+        type: string
+      created_at:
+        type: integer
+      enabled:
+        type: integer
+      id:
+        type: integer
+      scene:
+        type: string
+      title:
+        type: string
+      updated_at:
+        type: integer
+    type: object
+  types.OnlineUserItem:
+    properties:
+      guest_info:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO'
+      last_active_at:
+        type: integer
+      user_info:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO'
+    type: object
+  types.OnlineUserListResp:
+    properties:
+      list:
+        items:
+          $ref: '#/definitions/types.OnlineUserItem'
+        type: array
+    type: object
+  types.PhotoVO:
+    properties:
+      album_id:
+        type: integer
+      created_at:
+        type: integer
+      id:
+        type: integer
+      is_delete:
+        type: integer
+      photo_desc:
+        type: string
+      photo_name:
+        type: string
+      photo_src:
+        type: string
+      updated_at:
+        type: integer
+    type: object
+  types.PublishNotifyMessageReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  types.QueryAlbumPhotoListReq:
+    properties:
+      album_id:
+        description: 相册ID
+        type: integer
+    type: object
+  types.QueryApiListReq:
+    properties:
+      method:
+        description: api请求方法
+        type: string
+      name:
+        description: api名称
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      path:
+        description: api路径
+        type: string
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        description: 状态
+        type: integer
+    type: object
+  types.QueryArchivedArticleListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryCommentReplyListReq:
+    properties:
+      comment_id:
+        type: integer
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      topic_id:
+        type: integer
+      type:
+        type: integer
+    type: object
+  types.QueryFileListReq:
+    properties:
+      file_base:
+        description: 文件目录（筛选）
+        type: string
+      keyword:
+        description: 文件名关键词
+        type: string
+      page:
+        description: 页码
+        type: integer
+      page_size:
+        description: 每页条数
+        type: integer
+    type: object
+  types.QueryFileListResp:
+    properties:
+      list:
+        description: 文件列表
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO'
+        type: array
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页条数
+        type: integer
+      total:
+        description: 总数
+        type: integer
+    type: object
+  types.QueryGuestListReq:
+    properties:
+      device_id:
+        description: 设备ID
+        type: string
+      ip_source:
+        description: IP归属地
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryLoginLogListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      user_id:
+        type: string
+    type: object
+  types.QueryMenuListReq:
+    properties:
+      name:
+        description: 路由名字
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        description: 状态
+        type: integer
+      title:
+        description: 菜单标题
+        type: string
+    type: object
+  types.QueryNotifyMessageListReq:
+    properties:
+      category:
+        type: string
+      level:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        type: string
+      target_type:
+        type: string
+    type: object
+  types.QueryNotifyRecordListReq:
+    properties:
+      channel:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      recipient:
+        type: string
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        type: string
+    type: object
+  types.QueryNotifyTemplateListReq:
+    properties:
+      channel:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryOperationLogListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryPhotoListReq:
+    properties:
+      album_id:
+        type: integer
+      is_delete:
+        type: integer
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryRecommendArticleListReq:
+    type: object
+  types.QueryRoleListReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      role_key:
+        description: 角色标识（模糊查询）
+        type: string
+      role_label:
+        description: 角色名称（模糊查询）
+        type: string
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        description: 状态 0-正常 1-禁用（精确查询）
+        type: integer
+    type: object
+  types.QueryUploadLogListReq:
+    properties:
+      file_base:
+        type: string
+      file_name:
+        type: string
+      file_type:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryUserInboxRecordListReq:
+    properties:
+      only_unread:
+        type: integer
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      user_id:
+        type: string
+    type: object
+  types.QueryUserInboxRecordListResp:
+    properties:
+      list: {}
+      page:
+        type: integer
+      page_size:
+        type: integer
+      total:
+        type: integer
+      unread_total:
+        type: integer
+    type: object
+  types.QueryUserListReq:
+    properties:
+      keyword:
+        description: 关键词搜索（昵称/手机号）
+        type: string
+      mobile:
+        description: 手机号筛选
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      status:
+        description: 状态筛选
+        type: integer
+    type: object
+  types.QueryUserLoginHistoryReq:
+    properties:
+      page:
+        description: 当前页码
+        type: integer
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+    type: object
+  types.QueryVisitLogListReq:
+    properties:
+      device_id:
+        type: string
+      page:
+        description: 当前页码
+        type: integer
+      page_name:
+        type: string
+      page_size:
+        description: 每页数量
+        type: integer
+      sorts:
+        description: 排序
+        items:
+          type: string
+        type: array
+      user_id:
+        type: string
+    type: object
+  types.ReactivateAccountReq:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      mobile:
+        description: 手机号
+        type: string
+      verification_code:
+        description: 验证码（可选）
+        type: string
+    type: object
+  types.ReactivateAccountResp:
+    properties:
+      success:
+        description: 是否恢复成功
+        type: boolean
+    type: object
+  types.RegionStatVO:
+    properties:
+      name:
+        type: string
+      value:
+        type: integer
+    type: object
+  types.ResetUserPasswordReq:
+    properties:
+      new_password:
+        description: 新密码
+        type: string
+      user_id:
+        description: 用户ID (UUID)
+        type: string
+    type: object
+  types.ResetUserPasswordResp:
+    properties:
+      success:
+        type: boolean
+    type: object
+  types.RevokeNotifyMessageReq:
+    properties:
+      id:
+        type: integer
+    type: object
+  types.RolePermissionsResp:
+    properties:
+      api_ids:
+        description: 绑定的接口权限ID列表
+        items:
+          type: integer
+        type: array
+      menu_ids:
+        description: 绑定的菜单权限ID列表
+        items:
+          type: integer
+        type: array
+      role_id:
+        description: 角色ID
+        type: integer
+    type: object
+  types.RoleVO:
+    properties:
+      created_at:
+        description: 创建时间（时间戳）
+        type: integer
+      id:
+        description: 主键ID
+        type: integer
+      is_default:
+        description: 是否默认角色 0-否 1-是
+        type: integer
+      parent_id:
+        description: 父角色ID
+        type: integer
+      role_comment:
+        description: 角色备注说明
+        type: string
+      role_key:
+        description: 角色标识（唯一）
+        type: string
+      role_label:
+        description: 角色名称（展示用）
+        type: string
+      status:
+        description: 状态 0-正常 1-禁用
+        type: integer
+      updated_at:
+        description: 更新时间（时间戳）
+        type: integer
+    type: object
+  types.Server:
+    properties:
+      cpu: {}
+      disk: {}
+      os: {}
+      ram: {}
+    type: object
+  types.SyncApiResp:
+    properties:
+      success_count:
+        description: 同步成功数量
+        type: integer
+    type: object
+  types.SyncMenuReq:
+    properties:
+      menus:
+        items:
+          $ref: '#/definitions/types.CreateMenuReq'
+        type: array
+    type: object
+  types.SyncMenuResp:
+    properties:
+      success_count:
+        description: 同步成功数量
+        type: integer
+    type: object
+  types.TagOverviewVO:
+    properties:
+      article_count:
+        type: integer
+      id:
+        type: integer
+      tag_name:
+        type: string
+    type: object
+  types.TagVO:
+    properties:
+      article_count:
+        type: integer
+      created_at:
+        type: integer
+      id:
+        type: integer
+      tag_name:
+        type: string
+      updated_at:
+        type: integer
+    type: object
+  types.Talk:
+    properties:
+      comment_count:
+        description: 评论量
+        type: integer
+      content:
+        description: 评论内容
+        type: string
+      created_at:
+        description: 创建时间
+        type: integer
+      id:
+        description: 说说ID
+        type: integer
+      img_list:
+        description: 图片URL列表
+        items:
+          type: string
+        type: array
+      is_top:
+        description: 是否置顶
+        type: integer
+      like_count:
+        description: 点赞量
+        type: integer
+      status:
+        description: 状态 1.公开 2.私密
+        type: integer
+      updated_at:
+        description: 更新时间
+        type: integer
+      user_id:
+        description: 用户ID
+        type: string
+      user_info:
+        allOf:
+        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO'
+        description: 用户信息
+    type: object
+  types.TalkVO:
+    properties:
+      comment_count:
+        type: integer
+      content:
+        type: string
+      created_at:
+        type: integer
+      id:
+        type: integer
+      img_list:
+        items:
+          type: string
+        type: array
+      is_top:
+        type: integer
+      like_count:
+        type: integer
+      status:
+        type: integer
+      updated_at:
+        type: integer
+      user_id:
+        type: string
+      user_info:
+        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO'
+    type: object
+  types.UpdateAlbumDeleteReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+      is_delete:
+        type: integer
+    type: object
+  types.UpdateAlbumReq:
+    properties:
+      album_cover:
+        type: string
+      album_desc:
+        type: string
+      album_name:
+        type: string
+      id:
+        type: integer
+      is_delete:
+        type: integer
+      status:
+        type: integer
+    type: object
+  types.UpdateApiReq:
+    properties:
+      id:
+        description: 主键id
+        type: integer
+      method:
+        description: api请求方法
+        type: string
+      name:
+        description: api名称
+        type: string
+      parent_id:
+        description: 分组id
+        type: integer
+      path:
+        description: api路径
+        type: string
+      status:
+        description: 状态 0正常 1禁用
+        type: integer
+      traceable:
+        description: 是否追溯操作记录 0不需要，1需要
+        type: integer
+    type: object
+  types.UpdateArticleDeleteReq:
+    properties:
+      id:
+        type: integer
+      is_delete:
+        type: integer
+    type: object
+  types.UpdateArticleReq:
+    properties:
+      article_content:
+        type: string
+      article_cover:
+        type: string
+      article_title:
+        type: string
+      article_type:
+        type: integer
+      category_name:
+        type: string
+      id:
+        type: integer
+      is_top:
+        type: integer
+      original_url:
+        type: string
+      status:
+        type: integer
+      tag_name_list:
+        items:
+          type: string
+        type: array
+    type: object
+  types.UpdateArticleTopReq:
+    properties:
+      id:
+        type: integer
+      is_top:
+        type: integer
+    type: object
+  types.UpdateCategoryReq:
+    properties:
+      category_name:
+        type: string
+      id:
+        type: integer
+    type: object
+  types.UpdateCommentReq:
+    properties:
+      comment_content:
+        type: string
+      comment_id:
+        type: integer
+      reply_user_id:
+        type: string
+      status:
+        type: integer
+    type: object
+  types.UpdateCommentStatusReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+      status:
+        type: integer
+    type: object
+  types.UpdateFriendReq:
+    properties:
+      id:
+        type: integer
+      link_address:
+        type: string
+      link_avatar:
+        type: string
+      link_intro:
+        type: string
+      link_name:
+        type: string
+    type: object
+  types.UpdateMenuReq:
+    properties:
+      always_show:
+        description: 是否一直显示菜单
+        type: integer
+      component:
+        description: Layout组件
+        type: string
+      icon:
+        description: 菜单图标
+        type: string
+      id:
+        description: 主键
+        type: integer
+      keep_alive:
+        description: 是否缓存
+        type: integer
+      name:
+        description: 路由名字
+        type: string
+      params:
+        description: 参数
+        items:
+          $ref: '#/definitions/types.MenuMetaParams'
+        type: array
+      parent_id:
+        description: 父id
+        type: integer
+      path:
+        description: 路由地址
+        type: string
+      perm:
+        description: 权限标识
+        type: string
+      rank:
+        description: 排序
+        type: integer
+      redirect:
+        description: 路由重定向
+        type: string
+      status:
+        description: 状态 0正常 1禁用
+        type: integer
+      title:
+        description: 菜单标题
+        type: string
+      type:
+        description: 菜单类型（0代表目录、1代表菜单、2代表按钮、3代表外链）
+        type: string
+      visible:
+        description: 菜单是否可见
+        type: integer
+    type: object
+  types.UpdateMessageStatusReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+      status:
+        type: integer
+    type: object
+  types.UpdateNotifyMessageReq:
+    properties:
+      category:
+        type: string
+      content:
+        type: string
+      id:
+        type: integer
+      level:
+        type: string
+      target_ids:
+        type: string
+      target_type:
+        type: string
+      title:
+        type: string
+    type: object
+  types.UpdateNotifyTemplateReq:
+    properties:
+      channel:
+        type: string
+      code:
+        type: string
+      content:
+        type: string
+      enabled:
+        type: integer
+      id:
+        type: integer
+      scene:
+        type: string
+      title:
+        type: string
+    type: object
+  types.UpdatePageReq:
+    properties:
+      carousel_covers:
+        items:
+          type: string
+        type: array
+      id:
+        type: integer
+      is_carousel:
+        type: integer
+      page_cover:
+        type: string
+      page_label:
+        type: string
+      page_name:
+        type: string
+    type: object
+  types.UpdatePhotoDeleteReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+      is_delete:
+        type: integer
+    type: object
+  types.UpdatePhotoReq:
+    properties:
+      album_id:
+        type: integer
+      id:
+        type: integer
+      is_delete:
+        type: integer
+      photo_desc:
+        type: string
+      photo_name:
+        type: string
+      photo_src:
+        type: string
+    type: object
+  types.UpdateRoleApiPermissionsReq:
+    properties:
+      api_ids:
+        description: 接口权限ID列表（必填，空数组表示清空权限）
+        items:
+          type: integer
+        type: array
+      role_id:
+        description: 角色ID（必填）
+        type: integer
+    type: object
+  types.UpdateRoleMenuPermissionsReq:
+    properties:
+      menu_ids:
+        description: 菜单权限ID列表（必填，空数组表示清空权限）
+        items:
+          type: integer
+        type: array
+      role_id:
+        description: 角色ID（必填）
+        type: integer
+    type: object
+  types.UpdateRoleReq:
+    properties:
+      id:
+        description: 主键ID（必填）
+        type: integer
+      is_default:
+        description: 是否默认角色 0-否 1-是（必填）
+        type: integer
+      parent_id:
+        description: 父角色ID（可选）
+        type: integer
+      role_comment:
+        description: 角色备注（必填）
+        type: string
+      role_key:
+        description: 角色标识（必填，唯一）
+        type: string
+      role_label:
+        description: 角色名称（必填）
+        type: string
+      status:
+        description: 状态 0-正常 1-禁用（必填）
+        type: integer
+    type: object
+  types.UpdateTagReq:
+    properties:
+      id:
+        type: integer
+      tag_name:
+        type: string
+    type: object
+  types.UpdateTalkReq:
+    properties:
+      content:
+        type: string
+      id:
+        type: integer
+      img_list:
+        items:
+          type: string
+        type: array
+      is_top:
+        type: integer
+      status:
+        type: integer
+    type: object
+  types.UpdateUserAvatarReq:
+    properties:
+      avatar:
+        description: 头像
+        type: string
+    type: object
+  types.UpdateUserPasswordReq:
+    properties:
+      confirm_password:
+        description: 确认密码
+        type: string
+      new_password:
+        description: 新密码
+        type: string
+      old_password:
+        description: 旧密码
+        type: string
+    type: object
+  types.UpdateUserProfileResp:
+    type: object
+  types.UpdateUserRolesReq:
+    properties:
+      role_ids:
+        description: 角色ID列表
+        items:
+          type: integer
+        type: array
+      user_id:
+        description: 用户ID (UUID)
+        type: string
+    type: object
+  types.UpdateUserRolesResp:
+    properties:
+      success:
+        type: boolean
+    type: object
+  types.UpdateUserStatusReq:
+    properties:
+      status:
+        description: 状态：0-禁用 1-正常 2-冻结
+        type: integer
+      user_id:
+        description: 用户ID (UUID)
+        type: string
+    type: object
+  types.UpdateUserStatusResp:
+    properties:
+      success:
+        type: boolean
+    type: object
+  types.UserApi:
+    properties:
+      children:
+        items:
+          $ref: '#/definitions/types.UserApi'
+        type: array
+      created_at:
+        description: 创建时间
+        type: integer
+      id:
+        description: 主键id
+        type: integer
+      method:
+        description: api请求方法
+        type: string
+      name:
+        description: api名称
+        type: string
+      parent_id:
+        description: 父id
+        type: integer
+      path:
+        description: api路径
+        type: string
+      updated_at:
+        description: 更新时间
+        type: integer
+    type: object
+  types.UserLastLogin:
+    properties:
+      login_at:
+        description: 最后登录时间（毫秒时间戳）
+        type: integer
+      login_ip_address:
+        description: 最后登录IP地址
+        type: string
+      login_ip_source:
+        description: 最后登录IP归属地
+        type: string
+    type: object
+  types.UserMenu:
+    properties:
+      children:
+        items:
+          $ref: '#/definitions/types.UserMenu'
+        type: array
+      component:
+        description: Layout组件
+        type: string
+      created_at:
+        description: 创建时间
+        type: integer
+      id:
+        description: 主键
+        type: integer
+      meta:
+        allOf:
+        - $ref: '#/definitions/types.UserMenuMeta'
+        description: meta配置
+      name:
+        description: 路由名字
+        type: string
+      parent_id:
+        description: 父id
+        type: integer
+      path:
+        description: 路由地址
+        type: string
+      redirect:
+        description: 路由重定向
+        type: string
+      updated_at:
+        description: 更新时间
+        type: integer
+    type: object
+  types.UserMenuMeta:
+    properties:
+      affix:
+        type: boolean
+      alwaysShow:
+        type: boolean
+      breadcrumb:
+        type: boolean
+      hidden:
+        type: boolean
+      icon:
+        type: string
+      keepAlive:
+        type: boolean
+      title:
+        type: string
+    type: object
+  types.UserProfile:
+    properties:
+      avatar:
+        description: 头像
+        type: string
+      created_at:
+        description: 创建时间（毫秒时间戳）
+        type: integer
+      email:
+        description: 邮箱
+        type: string
+      gender:
+        description: 性别 0未知 1男 2女
+        type: integer
+      intro:
+        description: 简介
+        type: string
+      mobile:
+        description: 手机号
+        type: string
+      nickname:
+        description: 真实姓名
+        type: string
+      perms:
+        items:
+          type: string
+        type: array
+      roles:
+        items:
+          type: string
+        type: array
+      status:
+        description: 状态：0-禁用 1-正常 2-冻结
+        type: integer
+      third_party:
+        description: 第三方绑定
+        items:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo'
+        type: array
+      updated_at:
+        description: 更新时间（毫秒时间戳）
+        type: integer
+      user_id:
+        description: 用户ID（UUID）
+        type: string
+      username:
+        description: 用户名
+        type: string
+      website:
+        description: 网站
+        type: string
+    type: object
+  types.UserRole:
+    properties:
+      id:
+        description: 主键id
+        type: integer
+      parent_id:
+        description: 父id
+        type: integer
+      role_comment:
+        description: 角色备注
+        type: string
+      role_key:
+        description: 角色名
+        type: string
+      role_label:
+        description: 角色标签
+        type: string
+    type: object
+  types.UserRoleLabel:
+    properties:
+      role_id:
+        type: integer
+      role_key:
+        type: string
+      role_label:
+        type: string
+    type: object
+host: localhost:9090
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: https://github.com/ve-weiyi
+  description: ve-blog-gin 博客系统 API 文档
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  termsOfService: https://github.com/ve-weiyi/ve-blog-gin
+  title: ve-blog-gin API
+  version: 1.0.0
+paths:
+  /admin-api/v1/admin/get_about_me:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.AboutMeVO'
+  /admin-api/v1/admin/get_system_state:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.Server'
+  /admin-api/v1/admin/get_website_config:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO'
+  /admin-api/v1/admin/update_about_me:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.AboutMeVO'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/admin/update_website_config:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/album/create_album:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateAlbumReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.AlbumVO'
+  /admin-api/v1/album/delete_album:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteAlbumReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/album/get_album:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.AlbumVO'
+  /admin-api/v1/album/query_album_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/album/update_album:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateAlbumReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.AlbumVO'
+  /admin-api/v1/album/update_album_delete:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateAlbumDeleteReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/api/clean_api:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.CleanApiResp'
+  /admin-api/v1/api/create_api:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateApiReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ApiVO'
+  /admin-api/v1/api/delete_api:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteApiReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/api/get_api:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetApiReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ApiVO'
+  /admin-api/v1/api/query_api_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryApiListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/api/sync_api:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.SyncApiResp'
+  /admin-api/v1/api/update_api:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateApiReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ApiVO'
+  /admin-api/v1/article/create_article:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ArticleVO'
+  /admin-api/v1/article/delete_article:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/article/export_article:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.ExportArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/article/get_article:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ArticleVO'
+  /admin-api/v1/article/query_article_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/article/update_article:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ArticleVO'
+  /admin-api/v1/article/update_article_delete:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateArticleDeleteReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/article/update_article_top:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateArticleTopReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/auth/captcha:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp'
+  /admin-api/v1/auth/login/email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+  /admin-api/v1/auth/login/mobile:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+  /admin-api/v1/auth/login/password:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+  /admin-api/v1/auth/logout:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp'
+  /admin-api/v1/auth/oauth/:platform/authorize:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp'
+  /admin-api/v1/auth/oauth/:platform/login:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+  /admin-api/v1/auth/password/reset:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp'
+  /admin-api/v1/auth/refresh-token:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+  /admin-api/v1/auth/register/email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp'
+  /admin-api/v1/auth/send/email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp'
+  /admin-api/v1/auth/send/mobile:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp'
+  /admin-api/v1/category/create_category:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateCategoryReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.CategoryVO'
+  /admin-api/v1/category/delete_category:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteCategoryReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/category/query_category_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/category/update_category:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateCategoryReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.CategoryVO'
+  /admin-api/v1/comment/delete_comment:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteCommentReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/comment/query_comment_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/comment/update_comment_status:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateCommentStatusReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/friend/create_friend:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateFriendReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.FriendVO'
+  /admin-api/v1/friend/delete_friend:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteFriendReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/friend/query_friend_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/friend/update_friend:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateFriendReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.FriendVO'
+  /admin-api/v1/guest/get_guest:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp'
+  /admin-api/v1/guest/query_guest_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryGuestListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/login_log/delete_login_log:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteLoginLogReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/login_log/query_login_log_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryLoginLogListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/menu/clean_menu:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CleanMenuReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.CleanMenuResp'
+  /admin-api/v1/menu/create_menu:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateMenuReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.MenuVO'
+  /admin-api/v1/menu/delete_menu:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteMenuReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/menu/get_menu:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetMenuReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.MenuVO'
+  /admin-api/v1/menu/query_menu_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryMenuListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/menu/sync_menu:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.SyncMenuReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.SyncMenuResp'
+  /admin-api/v1/menu/update_menu:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateMenuReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.MenuVO'
+  /admin-api/v1/message/delete_message:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/message/query_message_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/message/update_message_status:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateMessageStatusReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_message/create_notify_message:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateNotifyMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.NotifyMessageVO'
+  /admin-api/v1/notify_message/delete_notify_message:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteNotifyMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_message/get_notify_message:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetNotifyMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.NotifyMessageVO'
+  /admin-api/v1/notify_message/publish_notify_message:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.PublishNotifyMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_message/query_notify_message_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryNotifyMessageListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/notify_message/revoke_notify_message:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.RevokeNotifyMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_message/update_notify_message:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateNotifyMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.NotifyMessageVO'
+  /admin-api/v1/notify_record/batch_mark_records_read:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.BatchMarkRecordsReadReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_record/delete_notify_record:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteNotifyRecordReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_record/mark_all_records_read:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.MarkAllRecordsReadReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_record/mark_record_read:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.MarkRecordReadReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_record/query_notify_record_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryNotifyRecordListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/notify_record/query_user_inbox_record_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryUserInboxRecordListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.QueryUserInboxRecordListResp'
+  /admin-api/v1/notify_template/create_notify_template:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateNotifyTemplateReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.NotifyTemplateVO'
+  /admin-api/v1/notify_template/delete_notify_template:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteNotifyTemplateReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/notify_template/get_notify_template:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetNotifyTemplateReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.NotifyTemplateVO'
+  /admin-api/v1/notify_template/query_notify_template_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryNotifyTemplateListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/notify_template/update_notify_template:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateNotifyTemplateReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.NotifyTemplateVO'
+  /admin-api/v1/operation_log/delete_operation_log:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteOperationLogReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/operation_log/query_operation_log_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryOperationLogListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/page/create_page:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreatePageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO'
+  /admin-api/v1/page/delete_page:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeletePageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/page/query_page_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/page/update_page:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdatePageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO'
+  /admin-api/v1/photo/create_photo:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreatePhotoReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.PhotoVO'
+  /admin-api/v1/photo/delete_photo:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeletePhotoReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/photo/query_photo_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryPhotoListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/photo/update_photo:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdatePhotoReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.PhotoVO'
+  /admin-api/v1/photo/update_photo_delete:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdatePhotoDeleteReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/ping:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp'
+  /admin-api/v1/role/create_role:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateRoleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.RoleVO'
+  /admin-api/v1/role/delete_role:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteRoleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/role/get_role:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetRoleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.RoleVO'
+  /admin-api/v1/role/get_role_permissions:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetRolePermissionsReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.RolePermissionsResp'
+  /admin-api/v1/role/query_role_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryRoleListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/role/update_role:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateRoleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.RoleVO'
+  /admin-api/v1/role/update_role_api_permissions:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateRoleApiPermissionsReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/role/update_role_menu_permissions:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateRoleMenuPermissionsReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/stats/get_article_analytics:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetArticleAnalyticsResp'
+  /admin-api/v1/stats/get_stats_dashboard:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetStatsDashboardResp'
+  /admin-api/v1/stats/get_user_geo_stats:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetUserGeoStatsReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserGeoStatsResp'
+  /admin-api/v1/stats/get_visit_trend:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetVisitTrendReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetVisitTrendResp'
+  /admin-api/v1/tag/create_tag:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateTagReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.TagVO'
+  /admin-api/v1/tag/delete_tag:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteTagReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/tag/query_tag_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/tag/update_tag:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateTagReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.TagVO'
+  /admin-api/v1/talk/create_talk:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateTalkReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.TalkVO'
+  /admin-api/v1/talk/delete_talk:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteTalkReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/talk/get_talk:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.TalkVO'
+  /admin-api/v1/talk/query_talk_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/talk/update_talk:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateTalkReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.TalkVO'
+  /admin-api/v1/upload/get_upload_token:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp'
+  /admin-api/v1/upload/query_file_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryFileListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.QueryFileListResp'
+  /admin-api/v1/upload/upload_file:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp'
+  /admin-api/v1/upload_log/delete_upload_log:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteUploadLogReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/upload_log/query_upload_log_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryUploadLogListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/user/get_online_users:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.OnlineUserListResp'
+  /admin-api/v1/user/get_user:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetUserDetailReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserDetailResp'
+  /admin-api/v1/user/me/bind_user_email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/me/bind_user_phone:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/me/bind_user_third_party:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/me/get_user_apis:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserApisResp'
+  /admin-api/v1/user/me/get_user_menus:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserMenusResp'
+  /admin-api/v1/user/me/get_user_profile:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.UserProfile'
+  /admin-api/v1/user/me/get_user_roles:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserRolesResp'
+  /admin-api/v1/user/me/query_user_login_history:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryUserLoginHistoryReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/user/me/unbind_user_third_party:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/me/update_user_avatar:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateUserAvatarReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/me/update_user_password:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateUserPasswordReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/me/update_user_profile:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+  /admin-api/v1/user/query_user_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryUserListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/user/reset_user_password:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.ResetUserPasswordReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ResetUserPasswordResp'
+  /admin-api/v1/user/update_user_roles:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateUserRolesReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.UpdateUserRolesResp'
+  /admin-api/v1/user/update_user_status:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateUserStatusReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.UpdateUserStatusResp'
+  /admin-api/v1/visit_log/delete_visit_log:
+    delete:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeleteVisitLogReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.BatchResp'
+  /admin-api/v1/visit_log/query_visit_log_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryVisitLogListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+  /admin-api/v1/websocket:
+    get:
+      responses: {}
+  /api/v1/album/get_album:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.Album'
+  /api/v1/album/query_album_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/album/query_album_photo_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryAlbumPhotoListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/article/get_article:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ArticleDetails'
+  /api/v1/article/like_article:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.LikeArticleReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/article/query_archived_article_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryArchivedArticleListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/article/query_article_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/article/query_recommend_article_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryRecommendArticleListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/auth/captcha:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp'
+  /api/v1/auth/login/email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+  /api/v1/auth/login/mobile:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+  /api/v1/auth/login/password:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+  /api/v1/auth/logout:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp'
+  /api/v1/auth/oauth/:platform/authorize:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp'
+  /api/v1/auth/oauth/:platform/login:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+  /api/v1/auth/password/reset:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp'
+  /api/v1/auth/refresh-token:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+  /api/v1/auth/register/email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp'
+  /api/v1/auth/send/email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp'
+  /api/v1/auth/send/mobile:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp'
+  /api/v1/blog:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetBlogHomeInfoReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetBlogHomeInfoResp'
+  /api/v1/blog/get_about_me:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetAboutMeReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetAboutMeResp'
+  /api/v1/category/query_category_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/comment/create_comment:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateCommentReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/comment/like_comment:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.LikeCommentReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/comment/query_comment_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/comment/query_comment_reply_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.QueryCommentReplyListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/comment/query_recent_comment_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/comment/update_comment:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.UpdateCommentReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/friend/query_friend_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/guest/get_guest:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp'
+  /api/v1/message/create_message:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.CreateMessageReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/message/query_message_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/page/query_page_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/ping:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp'
+  /api/v1/tag/query_tag_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/talk/get_talk:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.Talk'
+  /api/v1/talk/like_talk:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.LikeTalkReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/talk/query_talk_list:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+  /api/v1/upload/get_upload_token:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp'
+  /api/v1/upload/upload_file:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp'
+  /api/v1/user/me/bind_user_email:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/user/me/bind_user_phone:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/user/me/bind_user_third_party:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/user/me/deactivate_account:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.DeactivateAccountReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.DeactivateAccountResp'
+  /api/v1/user/me/get_user_like:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.GetUserLikeReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserLikeResp'
+  /api/v1/user/me/get_user_profile:
+    get:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.GetUserProfileResp'
+  /api/v1/user/me/reactivate_account:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/types.ReactivateAccountReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.ReactivateAccountResp'
+  /api/v1/user/me/unbind_user_third_party:
+    post:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+  /api/v1/user/me/update_user_profile:
+    put:
+      parameters:
+      - description: 请求参数
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq'
+      responses:
+        "200":
+          description: 返回信息
+          schema:
+            $ref: '#/definitions/types.UpdateUserProfileResp'
+  /api/v1/websocket:
+    get:
+      responses: {}
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: x-token
+    type: apiKey
+swagger: "2.0"

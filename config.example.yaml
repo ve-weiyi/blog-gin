@@ -1,0 +1,40 @@
+system:
+  port: 9920
+  env: dev
+  version: v1.0.0
+  runtime-path: ./runtime
+
+jwt:
+  access_secret: ve-blog-access-secret
+  access_expire: 7200
+  refresh_secret: ve-blog-refresh-secret
+  refresh_expire: 604800
+
+mysql:
+  host: 127.0.0.1
+  port: "3306"
+  username: root
+  password: "123456"
+  Database: ve-blog
+  config: charset=utf8mb4&parseTime=True&loc=Local
+
+redis:
+  host: 127.0.0.1
+  port: "6379"
+  password: ""
+  db: 0
+
+rabbitmq:
+  host: 127.0.0.1
+  port: "5672"
+  username: guest
+  password: guest
+
+zap:
+  level: debug
+  mode: console
+  file_name: ./runtime/app.log
+  max_size: 100
+  max_backups: 3
+  max_age: 30
+  compress: true

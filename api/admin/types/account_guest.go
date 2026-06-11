@@ -1,0 +1,22 @@
+package types
+
+type GetGuestReq struct {
+}
+
+type GetGuestResp struct {
+	Id        int64  `json:"id"`         // 访客唯一ID
+	DeviceId  string `json:"device_id"`  // 设备ID
+	Os        string `json:"os"`         // 操作系统
+	Browser   string `json:"browser"`    // 浏览器
+	IpAddress string `json:"ip_address"` // IP地址
+	IpSource  string `json:"ip_source"`  // IP归属地
+}
+
+type QueryGuestListReq struct {
+	PageQuery
+	Page     *int64    `json:"page,optional"`      // 当前页码
+	PageSize *int64    `json:"page_size,optional"` // 每页数量
+	Sorts    *[]string `json:"sorts,optional"`     // 排序
+	DeviceId *string   `json:"device_id,optional"` // 设备ID
+	IpSource *string   `json:"ip_source,optional"` // IP归属地
+}
