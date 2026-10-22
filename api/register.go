@@ -9,11 +9,11 @@ import (
 	"github.com/ve-weiyi/vkit/plugins/knife4j"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/ve-weiyi/ve-blog-gin/api/admin"
-	"github.com/ve-weiyi/ve-blog-gin/api/app"
-	"github.com/ve-weiyi/ve-blog-gin/docs"
-	"github.com/ve-weiyi/ve-blog-gin/infra/middleware"
-	"github.com/ve-weiyi/ve-blog-gin/svctx"
+	"github.com/ve-weiyi/blog-gin/api/admin"
+	"github.com/ve-weiyi/blog-gin/api/app"
+	"github.com/ve-weiyi/blog-gin/docs"
+	"github.com/ve-weiyi/blog-gin/infra/middleware"
+	"github.com/ve-weiyi/blog-gin/svctx"
 )
 
 // 初始化总路由

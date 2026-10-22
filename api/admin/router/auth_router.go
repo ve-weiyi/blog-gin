@@ -2,8 +2,8 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ve-weiyi/ve-blog-gin/api/admin/handler"
-	"github.com/ve-weiyi/ve-blog-gin/svctx"
+	"github.com/ve-weiyi/blog-gin/api/admin/handler"
+	"github.com/ve-weiyi/blog-gin/svctx"
 )
 
 type AuthRouter struct {

@@ -3,7 +3,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizheader"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizheader"
 )
 
 // Meta 将请求头中的关键字段注入 Gin context

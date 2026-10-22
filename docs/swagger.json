@@ -1,9 +1,9 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "ve-blog-gin 博客系统 API 文档",
-        "title": "ve-blog-gin API",
-        "termsOfService": "https://github.com/ve-weiyi/ve-blog-gin",
+        "description": "blog-gin 博客系统 API 文档",
+        "title": "blog-gin API",
+        "termsOfService": "https://github.com/ve-weiyi/blog-gin",
         "contact": {
             "name": "API Support",
             "url": "https://github.com/ve-weiyi",
@@ -26,7 +26,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -49,7 +49,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -72,7 +72,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -80,7 +80,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO"
                         }
                     }
                 }
@@ -103,7 +103,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -118,7 +118,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO"
                         }
                     }
                 ],
@@ -126,7 +126,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -187,7 +187,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetAlbumReq"
                         }
                     }
                 ],
@@ -210,7 +210,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryAlbumListReq"
                         }
                     }
                 ],
@@ -218,7 +218,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -279,7 +279,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -379,7 +379,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -394,7 +394,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -494,7 +494,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -509,7 +509,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetArticleReq"
                         }
                     }
                 ],
@@ -532,7 +532,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryArticleListReq"
                         }
                     }
                 ],
@@ -540,7 +540,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -586,7 +586,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -609,7 +609,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -624,7 +624,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaReq"
                         }
                     }
                 ],
@@ -632,7 +632,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaResp"
                         }
                     }
                 }
@@ -647,7 +647,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailLoginReq"
                         }
                     }
                 ],
@@ -655,7 +655,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -670,7 +670,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.MobileLoginReq"
                         }
                     }
                 ],
@@ -678,7 +678,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -693,7 +693,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PasswordLoginReq"
                         }
                     }
                 ],
@@ -701,7 +701,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -716,7 +716,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LogoutReq"
                         }
                     }
                 ],
@@ -724,7 +724,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LogoutResp"
                         }
                     }
                 }
@@ -739,7 +739,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlReq"
                         }
                     }
                 ],
@@ -747,7 +747,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlResp"
                         }
                     }
                 }
@@ -762,7 +762,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.OauthLoginReq"
                         }
                     }
                 ],
@@ -770,7 +770,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -785,7 +785,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordReq"
                         }
                     }
                 ],
@@ -793,7 +793,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordResp"
                         }
                     }
                 }
@@ -808,7 +808,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.RefreshTokenReq"
                         }
                     }
                 ],
@@ -816,7 +816,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -831,7 +831,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterReq"
                         }
                     }
                 ],
@@ -839,7 +839,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterResp"
                         }
                     }
                 }
@@ -854,7 +854,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeReq"
                         }
                     }
                 ],
@@ -862,7 +862,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeResp"
                         }
                     }
                 }
@@ -877,7 +877,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeReq"
                         }
                     }
                 ],
@@ -885,7 +885,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeResp"
                         }
                     }
                 }
@@ -946,7 +946,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryCategoryListReq"
                         }
                     }
                 ],
@@ -954,7 +954,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1015,7 +1015,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryCommentListReq"
                         }
                     }
                 ],
@@ -1023,7 +1023,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1107,7 +1107,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryFriendListReq"
                         }
                     }
                 ],
@@ -1115,7 +1115,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1153,7 +1153,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestReq"
                         }
                     }
                 ],
@@ -1161,7 +1161,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestResp"
                         }
                     }
                 }
@@ -1184,7 +1184,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1230,7 +1230,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1345,7 +1345,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1429,7 +1429,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryMessageListReq"
                         }
                     }
                 ],
@@ -1437,7 +1437,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1575,7 +1575,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1736,7 +1736,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1851,7 +1851,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1920,7 +1920,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1943,7 +1943,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageVO"
                         }
                     }
                 }
@@ -1981,7 +1981,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryPageListReq"
                         }
                     }
                 ],
@@ -1989,7 +1989,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2012,7 +2012,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageVO"
                         }
                     }
                 }
@@ -2081,7 +2081,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2142,7 +2142,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PingReq"
                         }
                     }
                 ],
@@ -2150,7 +2150,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PingResp"
                         }
                     }
                 }
@@ -2265,7 +2265,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2311,7 +2311,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2334,7 +2334,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2349,7 +2349,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2372,7 +2372,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2487,7 +2487,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryTagListReq"
                         }
                     }
                 ],
@@ -2495,7 +2495,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2579,7 +2579,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetTalkReq"
                         }
                     }
                 ],
@@ -2602,7 +2602,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryTalkListReq"
                         }
                     }
                 ],
@@ -2610,7 +2610,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2648,7 +2648,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenReq"
                         }
                     }
                 ],
@@ -2656,7 +2656,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenResp"
                         }
                     }
                 }
@@ -2694,7 +2694,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileReq"
                         }
                     }
                 ],
@@ -2702,7 +2702,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileResp"
                         }
                     }
                 }
@@ -2748,7 +2748,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2763,7 +2763,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2809,7 +2809,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserEmailReq"
                         }
                     }
                 ],
@@ -2817,7 +2817,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2832,7 +2832,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserPhoneReq"
                         }
                     }
                 ],
@@ -2840,7 +2840,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2855,7 +2855,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -2863,7 +2863,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2878,7 +2878,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2901,7 +2901,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2924,7 +2924,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUserProfileReq"
                         }
                     }
                 ],
@@ -2947,7 +2947,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2978,7 +2978,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2993,7 +2993,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UnbindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -3001,7 +3001,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3024,7 +3024,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3047,7 +3047,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3062,7 +3062,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UpdateUserProfileReq"
                         }
                     }
                 ],
@@ -3070,7 +3070,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3093,7 +3093,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -3208,7 +3208,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -3228,7 +3228,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetAlbumReq"
                         }
                     }
                 ],
@@ -3251,7 +3251,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryAlbumListReq"
                         }
                     }
                 ],
@@ -3259,7 +3259,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3282,7 +3282,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3297,7 +3297,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetArticleReq"
                         }
                     }
                 ],
@@ -3328,7 +3328,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3351,7 +3351,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3366,7 +3366,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryArticleListReq"
                         }
                     }
                 ],
@@ -3374,7 +3374,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3397,7 +3397,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3412,7 +3412,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaReq"
                         }
                     }
                 ],
@@ -3420,7 +3420,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaResp"
                         }
                     }
                 }
@@ -3435,7 +3435,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailLoginReq"
                         }
                     }
                 ],
@@ -3443,7 +3443,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3458,7 +3458,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.MobileLoginReq"
                         }
                     }
                 ],
@@ -3466,7 +3466,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3481,7 +3481,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PasswordLoginReq"
                         }
                     }
                 ],
@@ -3489,7 +3489,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3504,7 +3504,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LogoutReq"
                         }
                     }
                 ],
@@ -3512,7 +3512,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LogoutResp"
                         }
                     }
                 }
@@ -3527,7 +3527,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlReq"
                         }
                     }
                 ],
@@ -3535,7 +3535,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlResp"
                         }
                     }
                 }
@@ -3550,7 +3550,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.OauthLoginReq"
                         }
                     }
                 ],
@@ -3558,7 +3558,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3573,7 +3573,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordReq"
                         }
                     }
                 ],
@@ -3581,7 +3581,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordResp"
                         }
                     }
                 }
@@ -3596,7 +3596,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.RefreshTokenReq"
                         }
                     }
                 ],
@@ -3604,7 +3604,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3619,7 +3619,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterReq"
                         }
                     }
                 ],
@@ -3627,7 +3627,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterResp"
                         }
                     }
                 }
@@ -3642,7 +3642,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeReq"
                         }
                     }
                 ],
@@ -3650,7 +3650,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeResp"
                         }
                     }
                 }
@@ -3665,7 +3665,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeReq"
                         }
                     }
                 ],
@@ -3673,7 +3673,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeResp"
                         }
                     }
                 }
@@ -3734,7 +3734,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCategoryListReq"
                         }
                     }
                 ],
@@ -3742,7 +3742,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3765,7 +3765,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3788,7 +3788,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3803,7 +3803,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq"
                         }
                     }
                 ],
@@ -3811,7 +3811,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3834,7 +3834,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3849,7 +3849,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq"
                         }
                     }
                 ],
@@ -3857,7 +3857,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3880,7 +3880,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3895,7 +3895,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryFriendListReq"
                         }
                     }
                 ],
@@ -3903,7 +3903,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3918,7 +3918,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetGuestReq"
                         }
                     }
                 ],
@@ -3926,7 +3926,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetGuestResp"
                         }
                     }
                 }
@@ -3949,7 +3949,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3964,7 +3964,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryMessageListReq"
                         }
                     }
                 ],
@@ -3972,7 +3972,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3987,7 +3987,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryPageListReq"
                         }
                     }
                 ],
@@ -3995,7 +3995,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -4010,7 +4010,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PingReq"
                         }
                     }
                 ],
@@ -4018,7 +4018,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PingResp"
                         }
                     }
                 }
@@ -4033,7 +4033,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryTagListReq"
                         }
                     }
                 ],
@@ -4041,7 +4041,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -4056,7 +4056,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetTalkReq"
                         }
                     }
                 ],
@@ -4087,7 +4087,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4102,7 +4102,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryTalkListReq"
                         }
                     }
                 ],
@@ -4110,7 +4110,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -4125,7 +4125,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenReq"
                         }
                     }
                 ],
@@ -4133,7 +4133,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenResp"
                         }
                     }
                 }
@@ -4148,7 +4148,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UploadFileReq"
                         }
                     }
                 ],
@@ -4156,7 +4156,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UploadFileResp"
                         }
                     }
                 }
@@ -4171,7 +4171,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserEmailReq"
                         }
                     }
                 ],
@@ -4179,7 +4179,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4194,7 +4194,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserPhoneReq"
                         }
                     }
                 ],
@@ -4202,7 +4202,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4217,7 +4217,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -4225,7 +4225,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4286,7 +4286,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUserProfileReq"
                         }
                     }
                 ],
@@ -4332,7 +4332,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UnbindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -4340,7 +4340,7 @@
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4355,7 +4355,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UpdateUserProfileReq"
                         }
                     }
                 ],
@@ -4376,7 +4376,7 @@
         }
     },
     "definitions": {
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.BindUserEmailReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -4389,7 +4389,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.BindUserPhoneReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -4402,7 +4402,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.BindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4419,7 +4419,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmailLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4432,7 +4432,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4457,16 +4457,16 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO": {
             "type": "object",
             "properties": {
                 "file_base": {
@@ -4495,7 +4495,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetAlbumReq": {
             "type": "object",
             "properties": {
                 "id": {
@@ -4503,7 +4503,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetArticleReq": {
             "type": "object",
             "properties": {
                 "id": {
@@ -4511,7 +4511,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaReq": {
             "type": "object",
             "properties": {
                 "height": {
@@ -4524,7 +4524,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaResp": {
             "type": "object",
             "properties": {
                 "captcha_base64": {
@@ -4541,10 +4541,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestResp": {
             "type": "object",
             "properties": {
                 "browser": {
@@ -4573,7 +4573,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -4586,7 +4586,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlResp": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -4595,7 +4595,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetTalkReq": {
             "type": "object",
             "properties": {
                 "id": {
@@ -4603,7 +4603,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenReq": {
             "type": "object",
             "properties": {
                 "expire_seconds": {
@@ -4620,7 +4620,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenResp": {
             "type": "object",
             "properties": {
                 "access_url": {
@@ -4660,10 +4660,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetUserProfileReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GuestInfoVO": {
             "type": "object",
             "properties": {
                 "browser": {
@@ -4688,7 +4688,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp": {
             "type": "object",
             "properties": {
                 "scope": {
@@ -4696,7 +4696,7 @@
                     "type": "string"
                 },
                 "token": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.Token"
                 },
                 "user_id": {
                     "description": "用户id",
@@ -4708,13 +4708,13 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.LogoutReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.LogoutResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.MobileLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4727,7 +4727,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.OauthLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4744,7 +4744,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PageResult": {
             "type": "object",
             "properties": {
                 "list": {},
@@ -4759,7 +4759,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PageVO": {
             "type": "object",
             "properties": {
                 "carousel_covers": {
@@ -4791,7 +4791,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PasswordLoginReq": {
             "type": "object",
             "properties": {
                 "account": {
@@ -4812,10 +4812,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PingReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PingResp": {
             "type": "object",
             "properties": {
                 "description": {
@@ -4835,7 +4835,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryAlbumListReq": {
             "type": "object",
             "properties": {
                 "album_name": {
@@ -4861,7 +4861,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryArticleListReq": {
             "type": "object",
             "properties": {
                 "article_title": {
@@ -4902,7 +4902,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryCategoryListReq": {
             "type": "object",
             "properties": {
                 "category_name": {
@@ -4925,7 +4925,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryCommentListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -4954,7 +4954,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryFriendListReq": {
             "type": "object",
             "properties": {
                 "link_name": {
@@ -4977,7 +4977,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryMessageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5003,7 +5003,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryPageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5026,7 +5026,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryTagListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5049,7 +5049,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryTalkListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5072,7 +5072,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.RefreshTokenReq": {
             "type": "object",
             "properties": {
                 "grant_type": {
@@ -5089,7 +5089,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5110,10 +5110,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.RewardQrCode": {
             "type": "object",
             "properties": {
                 "alipay_qr_code": {
@@ -5124,7 +5124,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -5137,10 +5137,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -5153,10 +5153,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SocialAccountInfo": {
             "type": "object",
             "properties": {
                 "enabled": {
@@ -5173,7 +5173,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.ThirdPlatformInfo": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -5190,7 +5190,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.Token": {
             "type": "object",
             "properties": {
                 "access_token": {
@@ -5219,7 +5219,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UnbindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -5228,7 +5228,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UpdateUserProfileReq": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -5252,7 +5252,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileReq": {
             "type": "object",
             "properties": {
                 "file": {
@@ -5264,20 +5264,20 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileResp": {
             "type": "object",
             "properties": {
                 "file_info": {
                     "description": "文件信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO"
                         }
                     ]
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -5297,7 +5297,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UserThirdPartyInfo": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -5322,25 +5322,25 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO": {
             "type": "object",
             "properties": {
                 "admin_url": {
                     "type": "string"
                 },
                 "reward_qr_code": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.RewardQrCode"
                 },
                 "social_login_list": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ThirdPlatformInfo"
                     }
                 },
                 "social_url_list": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SocialAccountInfo"
                     }
                 },
                 "tourist_avatar": {
@@ -5350,17 +5350,17 @@
                     "type": "string"
                 },
                 "website_feature": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteFeature"
                 },
                 "website_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteInfo"
                 },
                 "websocket_url": {
                     "type": "string"
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteFeature": {
             "type": "object",
             "properties": {
                 "is_ai_assistant": {
@@ -5386,7 +5386,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteInfo": {
             "type": "object",
             "properties": {
                 "website_author": {
@@ -5412,7 +5412,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.BindUserEmailReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -5425,7 +5425,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.BindUserPhoneReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -5438,7 +5438,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.BindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5455,7 +5455,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmailLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5468,7 +5468,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5493,13 +5493,13 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.FileInfoVO": {
             "type": "object",
             "properties": {
                 "file_base": {
@@ -5528,7 +5528,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetAlbumReq": {
             "type": "object",
             "properties": {
                 "album_id": {
@@ -5536,7 +5536,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetArticleReq": {
             "type": "object",
             "properties": {
                 "article_id": {
@@ -5544,7 +5544,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaReq": {
             "type": "object",
             "properties": {
                 "height": {
@@ -5557,7 +5557,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaResp": {
             "type": "object",
             "properties": {
                 "captcha_base64": {
@@ -5574,10 +5574,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetGuestReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetGuestResp": {
             "type": "object",
             "properties": {
                 "browser": {
@@ -5606,7 +5606,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -5619,7 +5619,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlResp": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -5628,7 +5628,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetTalkReq": {
             "type": "object",
             "properties": {
                 "talk_id": {
@@ -5636,7 +5636,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenReq": {
             "type": "object",
             "properties": {
                 "expire_seconds": {
@@ -5653,7 +5653,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenResp": {
             "type": "object",
             "properties": {
                 "access_url": {
@@ -5693,10 +5693,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetUserProfileReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.LoginResp": {
             "type": "object",
             "properties": {
                 "scope": {
@@ -5704,7 +5704,7 @@
                     "type": "string"
                 },
                 "token": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.Token"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.Token"
                 },
                 "user_id": {
                     "description": "用户id",
@@ -5716,13 +5716,13 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.LogoutReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.LogoutResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.MobileLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5735,7 +5735,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.OauthLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5752,7 +5752,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PageResult": {
             "type": "object",
             "properties": {
                 "list": {},
@@ -5767,7 +5767,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PageVO": {
             "type": "object",
             "properties": {
                 "id": {
@@ -5792,7 +5792,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PasswordLoginReq": {
             "type": "object",
             "properties": {
                 "account": {
@@ -5813,10 +5813,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PingReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PingResp": {
             "type": "object",
             "properties": {
                 "description": {
@@ -5836,7 +5836,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryAlbumListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5856,7 +5856,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryArticleListReq": {
             "type": "object",
             "properties": {
                 "article_title": {
@@ -5885,7 +5885,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryCategoryListReq": {
             "type": "object",
             "properties": {
                 "category_name": {
@@ -5908,7 +5908,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5937,7 +5937,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryFriendListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5957,7 +5957,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryMessageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5977,7 +5977,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryPageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5997,7 +5997,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryTagListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -6020,7 +6020,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryTalkListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -6040,7 +6040,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.RefreshTokenReq": {
             "type": "object",
             "properties": {
                 "grant_type": {
@@ -6057,7 +6057,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -6078,10 +6078,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.RewardQrCode": {
             "type": "object",
             "properties": {
                 "alipay_qr_code": {
@@ -6094,7 +6094,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -6107,10 +6107,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -6123,10 +6123,10 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SocialAccountInfo": {
             "type": "object",
             "properties": {
                 "enabled": {
@@ -6147,7 +6147,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.ThirdPlatformInfo": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -6168,7 +6168,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.Token": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.Token": {
             "type": "object",
             "properties": {
                 "access_token": {
@@ -6197,7 +6197,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UnbindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -6206,7 +6206,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UpdateUserProfileReq": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -6231,7 +6231,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UploadFileReq": {
             "type": "object",
             "properties": {
                 "file": {
@@ -6243,20 +6243,20 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UploadFileResp": {
             "type": "object",
             "properties": {
                 "file_info": {
                     "description": "文件信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.FileInfoVO"
                         }
                     ]
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -6276,7 +6276,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UserThirdPartyInfo": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -6301,7 +6301,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.WebsiteConfigVO": {
             "type": "object",
             "properties": {
                 "admin_url": {
@@ -6312,7 +6312,7 @@
                     "description": "打赏二维码",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.RewardQrCode"
                         }
                     ]
                 },
@@ -6320,14 +6320,14 @@
                     "description": "用户第三方登录列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ThirdPlatformInfo"
                     }
                 },
                 "social_url_list": {
                     "description": "作者社交地址列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SocialAccountInfo"
                     }
                 },
                 "tourist_avatar": {
@@ -6342,7 +6342,7 @@
                     "description": "网站功能",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteFeature"
                         }
                     ]
                 },
@@ -6350,7 +6350,7 @@
                     "description": "网站信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteInfo"
                         }
                     ]
                 },
@@ -6360,7 +6360,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.WebsiteFeature": {
             "type": "object",
             "properties": {
                 "is_ai_assistant": {
@@ -6393,7 +6393,7 @@
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.WebsiteInfo": {
             "type": "object",
             "properties": {
                 "website_author": {
@@ -6550,7 +6550,7 @@
                     "type": "integer"
                 },
                 "author": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO"
                 },
                 "category_name": {
                     "type": "string"
@@ -7523,7 +7523,7 @@
                     "description": "页面列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageVO"
                     }
                 },
                 "tag_count": {
@@ -7542,7 +7542,7 @@
                     "description": "网站配置",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteConfigVO"
                         }
                     ]
                 }
@@ -7820,7 +7820,7 @@
                     "description": "第三方绑定",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserThirdPartyInfo"
                     }
                 },
                 "user_id": {
@@ -8113,13 +8113,13 @@
             "type": "object",
             "properties": {
                 "guest_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GuestInfoVO"
                 },
                 "last_active_at": {
                     "type": "integer"
                 },
                 "user_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO"
                 }
             }
         },
@@ -8293,7 +8293,7 @@
                     "description": "文件列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO"
                     }
                 },
                 "page": {
@@ -8967,7 +8967,7 @@
                     "description": "用户信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO"
                         }
                     ]
                 }
@@ -9010,7 +9010,7 @@
                     "type": "string"
                 },
                 "user_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO"
                 }
             }
         },
@@ -9764,7 +9764,7 @@
                     "description": "第三方绑定",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserThirdPartyInfo"
                     }
                 },
                 "updated_at": {

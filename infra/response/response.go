@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/go-sql-driver/mysql"
 
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizcode"
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizerr"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizcode"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizerr"
 )
 
 type Body struct {

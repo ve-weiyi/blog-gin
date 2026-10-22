@@ -7,16 +7,16 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/ve-weiyi/ve-blog-gin/cmd/migrate"
+	"github.com/ve-weiyi/blog-gin/cmd/migrate"
 )
 
 func NewRootCmd() *cobra.Command {
 	rootCmd := &cobra.Command{
-		Use:     "blog-gin",
-		Short:   "ve-blog-gin 博客系统",
+		Use:     "blog",
+		Short:   "blog 博客系统",
 		Version: fmt.Sprintf("%s %s/%s", "v1.0.0", runtime.GOOS, runtime.GOARCH),
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Println("欢迎使用 ve-blog-gin 博客系统！")
+			fmt.Println("欢迎使用 blog 博客系统！")
 			fmt.Printf("版本: %s\n", cmd.Version)
 			fmt.Printf("使用 --help 查看可用命令和选项。\n")
 		},

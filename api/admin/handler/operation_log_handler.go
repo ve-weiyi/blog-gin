@@ -2,11 +2,11 @@ package handler
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ve-weiyi/ve-blog-gin/api/admin/logic"
-	"github.com/ve-weiyi/ve-blog-gin/api/admin/types"
-	"github.com/ve-weiyi/ve-blog-gin/infra/request"
-	"github.com/ve-weiyi/ve-blog-gin/infra/response"
-	"github.com/ve-weiyi/ve-blog-gin/svctx"
+	"github.com/ve-weiyi/blog-gin/api/admin/logic"
+	"github.com/ve-weiyi/blog-gin/api/admin/types"
+	"github.com/ve-weiyi/blog-gin/infra/request"
+	"github.com/ve-weiyi/blog-gin/infra/response"
+	"github.com/ve-weiyi/blog-gin/svctx"
 )
 
 type OperationLogHandler struct {

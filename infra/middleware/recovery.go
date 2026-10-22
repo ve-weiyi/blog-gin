@@ -11,9 +11,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizcode"
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizerr"
-	"github.com/ve-weiyi/ve-blog-gin/infra/response"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizcode"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizerr"
+	"github.com/ve-weiyi/blog-gin/infra/response"
 )
 
 // recover掉项目可能出现的panic，并使用zap记录相关日志

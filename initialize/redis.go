@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/redis/go-redis/v9"
-	"github.com/ve-weiyi/ve-blog-gin/config"
+	"github.com/ve-weiyi/blog-gin/config"
 )
 
 func Redis(cfg *config.Config) *redis.Client {

@@ -1,9 +1,9 @@
 package logic
 
 import (
-	"github.com/ve-weiyi/ve-blog-gin/api/app/types"
-	"github.com/ve-weiyi/ve-blog-gin/infra/request"
-	"github.com/ve-weiyi/ve-blog-gin/svctx"
+	"github.com/ve-weiyi/blog-gin/api/app/types"
+	"github.com/ve-weiyi/blog-gin/infra/request"
+	"github.com/ve-weiyi/blog-gin/svctx"
 )
 
 type DefaultLogic struct {

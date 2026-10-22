@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ve-weiyi/vkit/adapter/logz"
 
-	"github.com/ve-weiyi/ve-blog-gin/api"
-	"github.com/ve-weiyi/ve-blog-gin/config"
-	"github.com/ve-weiyi/ve-blog-gin/svctx"
+	"github.com/ve-weiyi/blog-gin/api"
+	"github.com/ve-weiyi/blog-gin/config"
+	"github.com/ve-weiyi/blog-gin/infra/logz"
+	"github.com/ve-weiyi/blog-gin/svctx"
 )
 
 var (
@@ -23,17 +23,17 @@ var (
 	nacosPassword  = flag.String("nacos-password", "nacos", "Input Your Nacos Password")
 	nacosNamespace = flag.String("nacos-namespace", "dev", "Input Your Nacos NameSpaceId")
 	nacosGroup     = flag.String("nacos-group", "blog", "nacos group")
-	nacosDataID    = flag.String("nacos-data-id", "ve-blog-gin", "Input Your Nacos DataId")
+	nacosDataID    = flag.String("nacos-data-id", "blog-gin", "Input Your Nacos DataId")
 )
 
 func init() {
 	log.SetFlags(log.LstdFlags | log.Llongfile)
 }
 
-// @title						ve-blog-gin API
+// @title					blog-gin API
 // @version					1.0.0
-// @description				ve-blog-gin 博客系统 API 文档
-// @termsOfService			https://github.com/ve-weiyi/ve-blog-gin
+// @description				blog 博客系统 API 文档
+// @termsOfService			https://github.com/ve-weiyi/blog-gin
 // @contact.name			API Support
 // @contact.url			https://github.com/ve-weiyi
 // @contact.email			support@swagger.io
@@ -70,7 +70,7 @@ func main() {
 	}
 
 	// 初始化zap日志库
-	logz.SetLog(&logz.LogConfig{
+	logger, err := logz.New(&logz.Config{
 		Level:      c.Zap.Level,
 		Mode:       c.Zap.Mode,
 		Filename:   c.Zap.Filename,
@@ -79,7 +79,11 @@ func main() {
 		MaxAge:     c.Zap.MaxAge,
 		Compress:   c.Zap.Compress,
 	})
-	logz.L().Sugar().Infof("zap log init success. mode:%v, level:%v", c.Zap.Mode, c.Zap.Level)
+	if err != nil {
+		log.Fatalf("failed to initialize logger: %v\n", err)
+	}
+	logz.SetLogger(logger)
+	logz.S().Infof("zap log init success. mode:%v, level:%v", c.Zap.Mode, c.Zap.Level)
 
 	ctx := svctx.NewServiceContext(c)
 
@@ -88,7 +92,7 @@ func main() {
 	engine := gin.Default()
 	api.RegisterRouters(engine, ctx)
 
-	logz.L().Sugar().Infof("register router success")
+	logz.S().Infof("register router success")
 
 	address := fmt.Sprintf(":%d", c.Server.Port)
 	s := &http.Server{
@@ -101,10 +105,10 @@ func main() {
 	// 保证文本顺序输出
 	// In order to ensure that the text order output can be deleted
 	time.Sleep(10 * time.Microsecond)
-	logz.L().Sugar().Infof("run server on http://localhost:%v success", c.Server.Port)
+	logz.S().Infof("run server on http://localhost:%v success", c.Server.Port)
 
 	fmt.Printf(`
-    欢迎使用 ve-blog-gin
+    欢迎使用 blog-gin
     当前版本: %s
     默认接口文档地址: http://localhost:%v/api/v1/swagger/index.html
 `, c.Server.Version, c.Server.Port)

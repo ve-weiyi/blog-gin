@@ -9,7 +9,7 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "termsOfService": "https://github.com/ve-weiyi/ve-blog-gin",
+        "termsOfService": "https://github.com/ve-weiyi/blog-gin",
         "contact": {
             "name": "API Support",
             "url": "https://github.com/ve-weiyi",
@@ -33,7 +33,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -56,7 +56,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -79,7 +79,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -87,7 +87,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO"
                         }
                     }
                 }
@@ -110,7 +110,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -125,7 +125,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO"
                         }
                     }
                 ],
@@ -133,7 +133,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -194,7 +194,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetAlbumReq"
                         }
                     }
                 ],
@@ -217,7 +217,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryAlbumListReq"
                         }
                     }
                 ],
@@ -225,7 +225,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -286,7 +286,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -386,7 +386,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -401,7 +401,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -501,7 +501,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -516,7 +516,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetArticleReq"
                         }
                     }
                 ],
@@ -539,7 +539,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryArticleListReq"
                         }
                     }
                 ],
@@ -547,7 +547,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -593,7 +593,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -616,7 +616,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -631,7 +631,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaReq"
                         }
                     }
                 ],
@@ -639,7 +639,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaResp"
                         }
                     }
                 }
@@ -654,7 +654,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailLoginReq"
                         }
                     }
                 ],
@@ -662,7 +662,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -677,7 +677,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.MobileLoginReq"
                         }
                     }
                 ],
@@ -685,7 +685,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -700,7 +700,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PasswordLoginReq"
                         }
                     }
                 ],
@@ -708,7 +708,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -723,7 +723,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LogoutReq"
                         }
                     }
                 ],
@@ -731,7 +731,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LogoutResp"
                         }
                     }
                 }
@@ -746,7 +746,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlReq"
                         }
                     }
                 ],
@@ -754,7 +754,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlResp"
                         }
                     }
                 }
@@ -769,7 +769,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.OauthLoginReq"
                         }
                     }
                 ],
@@ -777,7 +777,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -792,7 +792,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordReq"
                         }
                     }
                 ],
@@ -800,7 +800,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordResp"
                         }
                     }
                 }
@@ -815,7 +815,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.RefreshTokenReq"
                         }
                     }
                 ],
@@ -823,7 +823,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp"
                         }
                     }
                 }
@@ -838,7 +838,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterReq"
                         }
                     }
                 ],
@@ -846,7 +846,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterResp"
                         }
                     }
                 }
@@ -861,7 +861,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeReq"
                         }
                     }
                 ],
@@ -869,7 +869,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeResp"
                         }
                     }
                 }
@@ -884,7 +884,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeReq"
                         }
                     }
                 ],
@@ -892,7 +892,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeResp"
                         }
                     }
                 }
@@ -953,7 +953,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryCategoryListReq"
                         }
                     }
                 ],
@@ -961,7 +961,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1022,7 +1022,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryCommentListReq"
                         }
                     }
                 ],
@@ -1030,7 +1030,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1114,7 +1114,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryFriendListReq"
                         }
                     }
                 ],
@@ -1122,7 +1122,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1160,7 +1160,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestReq"
                         }
                     }
                 ],
@@ -1168,7 +1168,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestResp"
                         }
                     }
                 }
@@ -1191,7 +1191,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1237,7 +1237,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1352,7 +1352,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1436,7 +1436,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryMessageListReq"
                         }
                     }
                 ],
@@ -1444,7 +1444,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1582,7 +1582,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1743,7 +1743,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1858,7 +1858,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1927,7 +1927,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -1950,7 +1950,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageVO"
                         }
                     }
                 }
@@ -1988,7 +1988,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryPageListReq"
                         }
                     }
                 ],
@@ -1996,7 +1996,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2019,7 +2019,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageVO"
                         }
                     }
                 }
@@ -2088,7 +2088,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2149,7 +2149,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PingReq"
                         }
                     }
                 ],
@@ -2157,7 +2157,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PingResp"
                         }
                     }
                 }
@@ -2272,7 +2272,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2318,7 +2318,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2341,7 +2341,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2356,7 +2356,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2379,7 +2379,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2494,7 +2494,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryTagListReq"
                         }
                     }
                 ],
@@ -2502,7 +2502,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2586,7 +2586,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetTalkReq"
                         }
                     }
                 ],
@@ -2609,7 +2609,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryTalkListReq"
                         }
                     }
                 ],
@@ -2617,7 +2617,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2655,7 +2655,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenReq"
                         }
                     }
                 ],
@@ -2663,7 +2663,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenResp"
                         }
                     }
                 }
@@ -2701,7 +2701,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileReq"
                         }
                     }
                 ],
@@ -2709,7 +2709,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileResp"
                         }
                     }
                 }
@@ -2755,7 +2755,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -2770,7 +2770,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2816,7 +2816,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserEmailReq"
                         }
                     }
                 ],
@@ -2824,7 +2824,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2839,7 +2839,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserPhoneReq"
                         }
                     }
                 ],
@@ -2847,7 +2847,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2862,7 +2862,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -2870,7 +2870,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -2885,7 +2885,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2908,7 +2908,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2931,7 +2931,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUserProfileReq"
                         }
                     }
                 ],
@@ -2954,7 +2954,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq"
                         }
                     }
                 ],
@@ -2985,7 +2985,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -3000,7 +3000,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UnbindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -3008,7 +3008,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3031,7 +3031,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3054,7 +3054,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3069,7 +3069,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UpdateUserProfileReq"
                         }
                     }
                 ],
@@ -3077,7 +3077,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp"
                         }
                     }
                 }
@@ -3100,7 +3100,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -3215,7 +3215,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult"
                         }
                     }
                 }
@@ -3235,7 +3235,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetAlbumReq"
                         }
                     }
                 ],
@@ -3258,7 +3258,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryAlbumListReq"
                         }
                     }
                 ],
@@ -3266,7 +3266,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3289,7 +3289,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3304,7 +3304,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetArticleReq"
                         }
                     }
                 ],
@@ -3335,7 +3335,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3358,7 +3358,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3373,7 +3373,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryArticleListReq"
                         }
                     }
                 ],
@@ -3381,7 +3381,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3404,7 +3404,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3419,7 +3419,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaReq"
                         }
                     }
                 ],
@@ -3427,7 +3427,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaResp"
                         }
                     }
                 }
@@ -3442,7 +3442,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailLoginReq"
                         }
                     }
                 ],
@@ -3450,7 +3450,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3465,7 +3465,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.MobileLoginReq"
                         }
                     }
                 ],
@@ -3473,7 +3473,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3488,7 +3488,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PasswordLoginReq"
                         }
                     }
                 ],
@@ -3496,7 +3496,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3511,7 +3511,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LogoutReq"
                         }
                     }
                 ],
@@ -3519,7 +3519,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LogoutResp"
                         }
                     }
                 }
@@ -3534,7 +3534,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlReq"
                         }
                     }
                 ],
@@ -3542,7 +3542,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlResp"
                         }
                     }
                 }
@@ -3557,7 +3557,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.OauthLoginReq"
                         }
                     }
                 ],
@@ -3565,7 +3565,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3580,7 +3580,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordReq"
                         }
                     }
                 ],
@@ -3588,7 +3588,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordResp"
                         }
                     }
                 }
@@ -3603,7 +3603,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.RefreshTokenReq"
                         }
                     }
                 ],
@@ -3611,7 +3611,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp"
                         }
                     }
                 }
@@ -3626,7 +3626,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterReq"
                         }
                     }
                 ],
@@ -3634,7 +3634,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterResp"
                         }
                     }
                 }
@@ -3649,7 +3649,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeReq"
                         }
                     }
                 ],
@@ -3657,7 +3657,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeResp"
                         }
                     }
                 }
@@ -3672,7 +3672,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeReq"
                         }
                     }
                 ],
@@ -3680,7 +3680,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeResp"
                         }
                     }
                 }
@@ -3741,7 +3741,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCategoryListReq"
                         }
                     }
                 ],
@@ -3749,7 +3749,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3772,7 +3772,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3795,7 +3795,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3810,7 +3810,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq"
                         }
                     }
                 ],
@@ -3818,7 +3818,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3841,7 +3841,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3856,7 +3856,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq"
                         }
                     }
                 ],
@@ -3864,7 +3864,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3887,7 +3887,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3902,7 +3902,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryFriendListReq"
                         }
                     }
                 ],
@@ -3910,7 +3910,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3925,7 +3925,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetGuestReq"
                         }
                     }
                 ],
@@ -3933,7 +3933,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetGuestResp"
                         }
                     }
                 }
@@ -3956,7 +3956,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -3971,7 +3971,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryMessageListReq"
                         }
                     }
                 ],
@@ -3979,7 +3979,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -3994,7 +3994,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryPageListReq"
                         }
                     }
                 ],
@@ -4002,7 +4002,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -4017,7 +4017,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PingReq"
                         }
                     }
                 ],
@@ -4025,7 +4025,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PingResp"
                         }
                     }
                 }
@@ -4040,7 +4040,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryTagListReq"
                         }
                     }
                 ],
@@ -4048,7 +4048,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -4063,7 +4063,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetTalkReq"
                         }
                     }
                 ],
@@ -4094,7 +4094,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4109,7 +4109,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryTalkListReq"
                         }
                     }
                 ],
@@ -4117,7 +4117,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult"
                         }
                     }
                 }
@@ -4132,7 +4132,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenReq"
                         }
                     }
                 ],
@@ -4140,7 +4140,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenResp"
                         }
                     }
                 }
@@ -4155,7 +4155,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UploadFileReq"
                         }
                     }
                 ],
@@ -4163,7 +4163,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UploadFileResp"
                         }
                     }
                 }
@@ -4178,7 +4178,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserEmailReq"
                         }
                     }
                 ],
@@ -4186,7 +4186,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4201,7 +4201,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserPhoneReq"
                         }
                     }
                 ],
@@ -4209,7 +4209,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4224,7 +4224,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -4232,7 +4232,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4293,7 +4293,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUserProfileReq"
                         }
                     }
                 ],
@@ -4339,7 +4339,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UnbindUserThirdPartyReq"
                         }
                     }
                 ],
@@ -4347,7 +4347,7 @@ const docTemplate = `{
                     "200": {
                         "description": "返回信息",
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp"
                         }
                     }
                 }
@@ -4362,7 +4362,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UpdateUserProfileReq"
                         }
                     }
                 ],
@@ -4383,7 +4383,7 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.BindUserEmailReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -4396,7 +4396,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.BindUserPhoneReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -4409,7 +4409,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.BindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4426,7 +4426,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmailLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4439,7 +4439,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4464,16 +4464,16 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO": {
             "type": "object",
             "properties": {
                 "file_base": {
@@ -4502,7 +4502,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetAlbumReq": {
             "type": "object",
             "properties": {
                 "id": {
@@ -4510,7 +4510,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetArticleReq": {
             "type": "object",
             "properties": {
                 "id": {
@@ -4518,7 +4518,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaReq": {
             "type": "object",
             "properties": {
                 "height": {
@@ -4531,7 +4531,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaResp": {
             "type": "object",
             "properties": {
                 "captcha_base64": {
@@ -4548,10 +4548,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestResp": {
             "type": "object",
             "properties": {
                 "browser": {
@@ -4580,7 +4580,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -4593,7 +4593,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlResp": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -4602,7 +4602,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetTalkReq": {
             "type": "object",
             "properties": {
                 "id": {
@@ -4610,7 +4610,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenReq": {
             "type": "object",
             "properties": {
                 "expire_seconds": {
@@ -4627,7 +4627,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenResp": {
             "type": "object",
             "properties": {
                 "access_url": {
@@ -4667,10 +4667,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GetUserProfileReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.GuestInfoVO": {
             "type": "object",
             "properties": {
                 "browser": {
@@ -4695,7 +4695,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp": {
             "type": "object",
             "properties": {
                 "scope": {
@@ -4703,7 +4703,7 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "token": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.Token"
                 },
                 "user_id": {
                     "description": "用户id",
@@ -4715,13 +4715,13 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.LogoutReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.LogoutResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.MobileLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4734,7 +4734,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.OauthLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -4751,7 +4751,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PageResult": {
             "type": "object",
             "properties": {
                 "list": {},
@@ -4766,7 +4766,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PageVO": {
             "type": "object",
             "properties": {
                 "carousel_covers": {
@@ -4798,7 +4798,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PasswordLoginReq": {
             "type": "object",
             "properties": {
                 "account": {
@@ -4819,10 +4819,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PingReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.PingResp": {
             "type": "object",
             "properties": {
                 "description": {
@@ -4842,7 +4842,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryAlbumListReq": {
             "type": "object",
             "properties": {
                 "album_name": {
@@ -4868,7 +4868,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryArticleListReq": {
             "type": "object",
             "properties": {
                 "article_title": {
@@ -4909,7 +4909,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryCategoryListReq": {
             "type": "object",
             "properties": {
                 "category_name": {
@@ -4932,7 +4932,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryCommentListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -4961,7 +4961,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryFriendListReq": {
             "type": "object",
             "properties": {
                 "link_name": {
@@ -4984,7 +4984,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryMessageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5010,7 +5010,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryPageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5033,7 +5033,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryTagListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5056,7 +5056,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.QueryTalkListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5079,7 +5079,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.RefreshTokenReq": {
             "type": "object",
             "properties": {
                 "grant_type": {
@@ -5096,7 +5096,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5117,10 +5117,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.RewardQrCode": {
             "type": "object",
             "properties": {
                 "alipay_qr_code": {
@@ -5131,7 +5131,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -5144,10 +5144,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -5160,10 +5160,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.SocialAccountInfo": {
             "type": "object",
             "properties": {
                 "enabled": {
@@ -5180,7 +5180,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.ThirdPlatformInfo": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -5197,7 +5197,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.Token": {
             "type": "object",
             "properties": {
                 "access_token": {
@@ -5226,7 +5226,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UnbindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -5235,7 +5235,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UpdateUserProfileReq": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -5259,7 +5259,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileReq": {
             "type": "object",
             "properties": {
                 "file": {
@@ -5271,20 +5271,20 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileResp": {
             "type": "object",
             "properties": {
                 "file_info": {
                     "description": "文件信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO"
                         }
                     ]
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -5304,7 +5304,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.UserThirdPartyInfo": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -5329,25 +5329,25 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO": {
             "type": "object",
             "properties": {
                 "admin_url": {
                     "type": "string"
                 },
                 "reward_qr_code": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.RewardQrCode"
                 },
                 "social_login_list": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ThirdPlatformInfo"
                     }
                 },
                 "social_url_list": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SocialAccountInfo"
                     }
                 },
                 "tourist_avatar": {
@@ -5357,17 +5357,17 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "website_feature": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteFeature"
                 },
                 "website_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteInfo"
                 },
                 "websocket_url": {
                     "type": "string"
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteFeature": {
             "type": "object",
             "properties": {
                 "is_ai_assistant": {
@@ -5393,7 +5393,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo": {
+        "github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteInfo": {
             "type": "object",
             "properties": {
                 "website_author": {
@@ -5419,7 +5419,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.BindUserEmailReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -5432,7 +5432,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.BindUserPhoneReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -5445,7 +5445,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.BindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5462,7 +5462,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmailLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5475,7 +5475,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5500,13 +5500,13 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.FileInfoVO": {
             "type": "object",
             "properties": {
                 "file_base": {
@@ -5535,7 +5535,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetAlbumReq": {
             "type": "object",
             "properties": {
                 "album_id": {
@@ -5543,7 +5543,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetArticleReq": {
             "type": "object",
             "properties": {
                 "article_id": {
@@ -5551,7 +5551,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaReq": {
             "type": "object",
             "properties": {
                 "height": {
@@ -5564,7 +5564,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaResp": {
             "type": "object",
             "properties": {
                 "captcha_base64": {
@@ -5581,10 +5581,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetGuestReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetGuestResp": {
             "type": "object",
             "properties": {
                 "browser": {
@@ -5613,7 +5613,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -5626,7 +5626,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlResp": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -5635,7 +5635,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetTalkReq": {
             "type": "object",
             "properties": {
                 "talk_id": {
@@ -5643,7 +5643,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenReq": {
             "type": "object",
             "properties": {
                 "expire_seconds": {
@@ -5660,7 +5660,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenResp": {
             "type": "object",
             "properties": {
                 "access_url": {
@@ -5700,10 +5700,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.GetUserProfileReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.LoginResp": {
             "type": "object",
             "properties": {
                 "scope": {
@@ -5711,7 +5711,7 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "token": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.Token"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.Token"
                 },
                 "user_id": {
                     "description": "用户id",
@@ -5723,13 +5723,13 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.LogoutReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.LogoutResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.MobileLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5742,7 +5742,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.OauthLoginReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -5759,7 +5759,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PageResult": {
             "type": "object",
             "properties": {
                 "list": {},
@@ -5774,7 +5774,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PageVO": {
             "type": "object",
             "properties": {
                 "id": {
@@ -5799,7 +5799,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PasswordLoginReq": {
             "type": "object",
             "properties": {
                 "account": {
@@ -5820,10 +5820,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PingReq": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.PingResp": {
             "type": "object",
             "properties": {
                 "description": {
@@ -5843,7 +5843,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryAlbumListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5863,7 +5863,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryArticleListReq": {
             "type": "object",
             "properties": {
                 "article_title": {
@@ -5892,7 +5892,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryCategoryListReq": {
             "type": "object",
             "properties": {
                 "category_name": {
@@ -5915,7 +5915,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5944,7 +5944,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryFriendListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5964,7 +5964,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryMessageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -5984,7 +5984,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryPageListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -6004,7 +6004,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryTagListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -6027,7 +6027,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.QueryTalkListReq": {
             "type": "object",
             "properties": {
                 "page": {
@@ -6047,7 +6047,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.RefreshTokenReq": {
             "type": "object",
             "properties": {
                 "grant_type": {
@@ -6064,7 +6064,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordReq": {
             "type": "object",
             "properties": {
                 "code": {
@@ -6085,10 +6085,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.RewardQrCode": {
             "type": "object",
             "properties": {
                 "alipay_qr_code": {
@@ -6101,7 +6101,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeReq": {
             "type": "object",
             "properties": {
                 "email": {
@@ -6114,10 +6114,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeReq": {
             "type": "object",
             "properties": {
                 "mobile": {
@@ -6130,10 +6130,10 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeResp": {
             "type": "object"
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.SocialAccountInfo": {
             "type": "object",
             "properties": {
                 "enabled": {
@@ -6154,7 +6154,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.ThirdPlatformInfo": {
             "type": "object",
             "properties": {
                 "authorize_url": {
@@ -6175,7 +6175,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.Token": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.Token": {
             "type": "object",
             "properties": {
                 "access_token": {
@@ -6204,7 +6204,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UnbindUserThirdPartyReq": {
             "type": "object",
             "properties": {
                 "platform": {
@@ -6213,7 +6213,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UpdateUserProfileReq": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -6238,7 +6238,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UploadFileReq": {
             "type": "object",
             "properties": {
                 "file": {
@@ -6250,20 +6250,20 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UploadFileResp": {
             "type": "object",
             "properties": {
                 "file_info": {
                     "description": "文件信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.FileInfoVO"
                         }
                     ]
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -6283,7 +6283,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.UserThirdPartyInfo": {
             "type": "object",
             "properties": {
                 "avatar": {
@@ -6308,7 +6308,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.WebsiteConfigVO": {
             "type": "object",
             "properties": {
                 "admin_url": {
@@ -6319,7 +6319,7 @@ const docTemplate = `{
                     "description": "打赏二维码",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.RewardQrCode"
                         }
                     ]
                 },
@@ -6327,14 +6327,14 @@ const docTemplate = `{
                     "description": "用户第三方登录列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ThirdPlatformInfo"
                     }
                 },
                 "social_url_list": {
                     "description": "作者社交地址列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SocialAccountInfo"
                     }
                 },
                 "tourist_avatar": {
@@ -6349,7 +6349,7 @@ const docTemplate = `{
                     "description": "网站功能",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteFeature"
                         }
                     ]
                 },
@@ -6357,7 +6357,7 @@ const docTemplate = `{
                     "description": "网站信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteInfo"
                         }
                     ]
                 },
@@ -6367,7 +6367,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.WebsiteFeature": {
             "type": "object",
             "properties": {
                 "is_ai_assistant": {
@@ -6400,7 +6400,7 @@ const docTemplate = `{
                 }
             }
         },
-        "github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo": {
+        "github_com_ve-weiyi_blog-gin_api_app_types.WebsiteInfo": {
             "type": "object",
             "properties": {
                 "website_author": {
@@ -6557,7 +6557,7 @@ const docTemplate = `{
                     "type": "integer"
                 },
                 "author": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO"
                 },
                 "category_name": {
                     "type": "string"
@@ -7530,7 +7530,7 @@ const docTemplate = `{
                     "description": "页面列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageVO"
                     }
                 },
                 "tag_count": {
@@ -7549,7 +7549,7 @@ const docTemplate = `{
                     "description": "网站配置",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteConfigVO"
                         }
                     ]
                 }
@@ -7827,7 +7827,7 @@ const docTemplate = `{
                     "description": "第三方绑定",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserThirdPartyInfo"
                     }
                 },
                 "user_id": {
@@ -8120,13 +8120,13 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "guest_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GuestInfoVO"
                 },
                 "last_active_at": {
                     "type": "integer"
                 },
                 "user_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO"
                 }
             }
         },
@@ -8300,7 +8300,7 @@ const docTemplate = `{
                     "description": "文件列表",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO"
                     }
                 },
                 "page": {
@@ -8974,7 +8974,7 @@ const docTemplate = `{
                     "description": "用户信息",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO"
+                            "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO"
                         }
                     ]
                 }
@@ -9017,7 +9017,7 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "user_info": {
-                    "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO"
+                    "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO"
                 }
             }
         },
@@ -9771,7 +9771,7 @@ const docTemplate = `{
                     "description": "第三方绑定",
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo"
+                        "$ref": "#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserThirdPartyInfo"
                     }
                 },
                 "updated_at": {
@@ -9847,8 +9847,8 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "localhost:9090",
 	BasePath:         "",
 	Schemes:          []string{},
-	Title:            "ve-blog-gin API",
-	Description:      "ve-blog-gin 博客系统 API 文档",
+	Title:            "blog-gin API",
+	Description:      "blog-gin 博客系统 API 文档",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

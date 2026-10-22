@@ -7,9 +7,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/redis/go-redis/v9"
 
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizcode"
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizerr"
-	"github.com/ve-weiyi/ve-blog-gin/infra/response"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizcode"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizerr"
+	"github.com/ve-weiyi/blog-gin/infra/response"
 )
 
 // 限频

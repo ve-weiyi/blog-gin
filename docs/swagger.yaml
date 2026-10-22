@@ -1,5 +1,5 @@
 definitions:
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.BindUserEmailReq:
     properties:
       email:
         description: 邮箱
@@ -8,7 +8,7 @@ definitions:
         description: 验证码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.BindUserPhoneReq:
     properties:
       mobile:
         description: 手机号
@@ -17,7 +17,7 @@ definitions:
         description: 验证码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.BindUserThirdPartyReq:
     properties:
       code:
         description: 授权码
@@ -29,7 +29,7 @@ definitions:
         description: 状态
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.EmailLoginReq:
     properties:
       code:
         description: 验证码
@@ -38,7 +38,7 @@ definitions:
         description: 邮箱
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterReq:
     properties:
       code:
         description: 验证码
@@ -56,13 +56,13 @@ definitions:
         description: 用户名
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO:
+  github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO:
     properties:
       file_base:
         description: 文件目录
@@ -83,17 +83,17 @@ definitions:
         description: 更新时间
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetAlbumReq:
     properties:
       id:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetArticleReq:
     properties:
       id:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaReq:
     properties:
       height:
         description: 高度
@@ -102,7 +102,7 @@ definitions:
         description: 宽度
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaResp:
     properties:
       captcha_base64:
         description: 验证码base64
@@ -114,9 +114,9 @@ definitions:
         description: 验证码key
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestResp:
     properties:
       browser:
         description: 浏览器
@@ -137,7 +137,7 @@ definitions:
         description: 操作系统
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlReq:
     properties:
       platform:
         description: 平台
@@ -146,18 +146,18 @@ definitions:
         description: 状态
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlResp:
     properties:
       authorize_url:
         description: 授权地址
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetTalkReq:
     properties:
       id:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenReq:
     properties:
       expire_seconds:
         description: 凭证有效期（秒），默认1小时
@@ -169,7 +169,7 @@ definitions:
         description: 文件名称
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenResp:
     properties:
       access_url:
         description: 上传成功后的访问URL
@@ -198,9 +198,9 @@ definitions:
         description: 上传地址
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GetUserProfileReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO:
+  github_com_ve-weiyi_blog-gin_api_admin_types.GuestInfoVO:
     properties:
       browser:
         description: 浏览器
@@ -218,13 +218,13 @@ definitions:
         description: 操作系统
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp:
     properties:
       scope:
         description: 作用域
         type: string
       token:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.Token'
       user_id:
         description: 用户id
         type: string
@@ -232,11 +232,11 @@ definitions:
         description: 用户类型：user-普通用户 admin-管理员
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.LogoutReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.LogoutResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.MobileLoginReq:
     properties:
       code:
         description: 验证码
@@ -245,7 +245,7 @@ definitions:
         description: 手机号
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.OauthLoginReq:
     properties:
       code:
         description: 授权码
@@ -257,7 +257,7 @@ definitions:
         description: 状态
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult:
+  github_com_ve-weiyi_blog-gin_api_admin_types.PageResult:
     properties:
       list: {}
       page:
@@ -267,7 +267,7 @@ definitions:
       total:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO:
+  github_com_ve-weiyi_blog-gin_api_admin_types.PageVO:
     properties:
       carousel_covers:
         items:
@@ -288,7 +288,7 @@ definitions:
       updated_at:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.PasswordLoginReq:
     properties:
       account:
         description: 账号/手机号/邮箱
@@ -303,9 +303,9 @@ definitions:
         description: 密码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.PingReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.PingResp:
     properties:
       description:
         type: string
@@ -318,7 +318,7 @@ definitions:
       version:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryAlbumListReq:
     properties:
       album_name:
         type: string
@@ -336,7 +336,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryArticleListReq:
     properties:
       article_title:
         type: string
@@ -364,7 +364,7 @@ definitions:
       tag_name:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryCategoryListReq:
     properties:
       category_name:
         type: string
@@ -380,7 +380,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryCommentListReq:
     properties:
       page:
         description: 当前页码
@@ -400,7 +400,7 @@ definitions:
       user_id:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryFriendListReq:
     properties:
       link_name:
         type: string
@@ -416,7 +416,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryMessageListReq:
     properties:
       page:
         description: 当前页码
@@ -434,7 +434,7 @@ definitions:
       user_id:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryPageListReq:
     properties:
       page:
         description: 当前页码
@@ -450,7 +450,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryTagListReq:
     properties:
       page:
         description: 当前页码
@@ -466,7 +466,7 @@ definitions:
       tag_name:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.QueryTalkListReq:
     properties:
       page:
         description: 当前页码
@@ -482,7 +482,7 @@ definitions:
       status:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.RefreshTokenReq:
     properties:
       grant_type:
         description: 授权类型
@@ -494,7 +494,7 @@ definitions:
         description: 用户id
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordReq:
     properties:
       code:
         description: 验证码
@@ -509,16 +509,16 @@ definitions:
         description: 新密码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode:
+  github_com_ve-weiyi_blog-gin_api_admin_types.RewardQrCode:
     properties:
       alipay_qr_code:
         type: string
       weixin_qr_code:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeReq:
     properties:
       email:
         description: 邮箱
@@ -527,9 +527,9 @@ definitions:
         description: login / register / reset_password / bind_email
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeReq:
     properties:
       mobile:
         description: 手机号
@@ -538,9 +538,9 @@ definitions:
         description: login / reset_password / bind_phone
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo:
+  github_com_ve-weiyi_blog-gin_api_admin_types.SocialAccountInfo:
     properties:
       enabled:
         type: boolean
@@ -551,7 +551,7 @@ definitions:
       platform:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo:
+  github_com_ve-weiyi_blog-gin_api_admin_types.ThirdPlatformInfo:
     properties:
       authorize_url:
         type: string
@@ -562,7 +562,7 @@ definitions:
       platform:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.Token:
+  github_com_ve-weiyi_blog-gin_api_admin_types.Token:
     properties:
       access_token:
         description: 访问令牌：用于接口访问，有效期短
@@ -583,13 +583,13 @@ definitions:
         description: Token 类型（如 "Bearer"）
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.UnbindUserThirdPartyReq:
     properties:
       platform:
         description: 平台
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.UpdateUserProfileReq:
     properties:
       avatar:
         description: 用户头像
@@ -606,7 +606,7 @@ definitions:
         description: 网站
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq:
+  github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileReq:
     properties:
       file:
         description: 文件
@@ -614,14 +614,14 @@ definitions:
         description: 文件目录
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp:
+  github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileResp:
     properties:
       file_info:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO'
         description: 文件信息
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO:
+  github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO:
     properties:
       avatar:
         type: string
@@ -634,7 +634,7 @@ definitions:
       username:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo:
+  github_com_ve-weiyi_blog-gin_api_admin_types.UserThirdPartyInfo:
     properties:
       avatar:
         description: 头像
@@ -652,32 +652,32 @@ definitions:
         description: 平台
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO:
+  github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO:
     properties:
       admin_url:
         type: string
       reward_qr_code:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RewardQrCode'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.RewardQrCode'
       social_login_list:
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ThirdPlatformInfo'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ThirdPlatformInfo'
         type: array
       social_url_list:
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SocialAccountInfo'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SocialAccountInfo'
         type: array
       tourist_avatar:
         type: string
       user_avatar:
         type: string
       website_feature:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteFeature'
       website_info:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteInfo'
       websocket_url:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteFeature:
+  github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteFeature:
     properties:
       is_ai_assistant:
         type: integer
@@ -694,7 +694,7 @@ definitions:
       is_reward:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteInfo:
+  github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteInfo:
     properties:
       website_author:
         type: string
@@ -711,7 +711,7 @@ definitions:
       website_record_no:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.BindUserEmailReq:
     properties:
       email:
         description: 邮箱
@@ -720,7 +720,7 @@ definitions:
         description: 验证码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.BindUserPhoneReq:
     properties:
       mobile:
         description: 手机号
@@ -729,7 +729,7 @@ definitions:
         description: 验证码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.BindUserThirdPartyReq:
     properties:
       code:
         description: 授权码
@@ -741,7 +741,7 @@ definitions:
         description: 状态
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.EmailLoginReq:
     properties:
       code:
         description: 验证码
@@ -750,7 +750,7 @@ definitions:
         description: 邮箱
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterReq:
     properties:
       code:
         description: 验证码
@@ -768,11 +768,11 @@ definitions:
         description: 用户名
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO:
+  github_com_ve-weiyi_blog-gin_api_app_types.FileInfoVO:
     properties:
       file_base:
         description: 文件目录
@@ -793,17 +793,17 @@ definitions:
         description: 更新时间
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetAlbumReq:
     properties:
       album_id:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetArticleReq:
     properties:
       article_id:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaReq:
     properties:
       height:
         description: 高度
@@ -812,7 +812,7 @@ definitions:
         description: 宽度
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaResp:
     properties:
       captcha_base64:
         description: 验证码base64
@@ -824,9 +824,9 @@ definitions:
         description: 验证码key
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetGuestReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetGuestResp:
     properties:
       browser:
         description: 浏览器
@@ -847,7 +847,7 @@ definitions:
         description: 操作系统
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlReq:
     properties:
       platform:
         description: 平台
@@ -856,18 +856,18 @@ definitions:
         description: 状态
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlResp:
     properties:
       authorize_url:
         description: 授权地址
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetTalkReq:
     properties:
       talk_id:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenReq:
     properties:
       expire_seconds:
         description: 凭证有效期（秒），默认1小时
@@ -879,7 +879,7 @@ definitions:
         description: 文件名称
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenResp:
     properties:
       access_url:
         description: 上传成功后的访问URL
@@ -908,15 +908,15 @@ definitions:
         description: 上传地址
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.GetUserProfileReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.LoginResp:
     properties:
       scope:
         description: 作用域
         type: string
       token:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.Token'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.Token'
       user_id:
         description: 用户id
         type: string
@@ -924,11 +924,11 @@ definitions:
         description: 用户类型：user-普通用户 app-管理员
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.LogoutReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.LogoutResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.MobileLoginReq:
     properties:
       code:
         description: 验证码
@@ -937,7 +937,7 @@ definitions:
         description: 手机号
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.OauthLoginReq:
     properties:
       code:
         description: 授权码
@@ -949,7 +949,7 @@ definitions:
         description: 状态
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult:
+  github_com_ve-weiyi_blog-gin_api_app_types.PageResult:
     properties:
       list: {}
       page:
@@ -959,7 +959,7 @@ definitions:
       total:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO:
+  github_com_ve-weiyi_blog-gin_api_app_types.PageVO:
     properties:
       id:
         description: 页面ID
@@ -977,7 +977,7 @@ definitions:
         description: 页面名称
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.PasswordLoginReq:
     properties:
       account:
         description: 账号/手机号/邮箱
@@ -992,9 +992,9 @@ definitions:
         description: 密码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.PingReq:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.PingResp:
     properties:
       description:
         type: string
@@ -1007,7 +1007,7 @@ definitions:
       version:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryAlbumListReq:
     properties:
       page:
         description: 当前页码
@@ -1021,7 +1021,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryArticleListReq:
     properties:
       article_title:
         type: string
@@ -1041,7 +1041,7 @@ definitions:
       tag_name:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryCategoryListReq:
     properties:
       category_name:
         type: string
@@ -1057,7 +1057,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq:
     properties:
       page:
         description: 当前页码
@@ -1077,7 +1077,7 @@ definitions:
       type:
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryFriendListReq:
     properties:
       page:
         description: 当前页码
@@ -1091,7 +1091,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryMessageListReq:
     properties:
       page:
         description: 当前页码
@@ -1105,7 +1105,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryPageListReq:
     properties:
       page:
         description: 当前页码
@@ -1119,7 +1119,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryTagListReq:
     properties:
       page:
         description: 当前页码
@@ -1135,7 +1135,7 @@ definitions:
       tag_name:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.QueryTalkListReq:
     properties:
       page:
         description: 当前页码
@@ -1149,7 +1149,7 @@ definitions:
           type: string
         type: array
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.RefreshTokenReq:
     properties:
       grant_type:
         description: 授权类型
@@ -1161,7 +1161,7 @@ definitions:
         description: 用户id
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordReq:
     properties:
       code:
         description: 验证码
@@ -1176,9 +1176,9 @@ definitions:
         description: 新密码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode:
+  github_com_ve-weiyi_blog-gin_api_app_types.RewardQrCode:
     properties:
       alipay_qr_code:
         description: 支付宝二维码
@@ -1187,7 +1187,7 @@ definitions:
         description: 微信二维码
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeReq:
     properties:
       email:
         description: 邮箱
@@ -1196,9 +1196,9 @@ definitions:
         description: login / register / reset_password / bind_email
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeReq:
     properties:
       mobile:
         description: 手机号
@@ -1207,9 +1207,9 @@ definitions:
         description: login / reset_password / bind_phone
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeResp:
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo:
+  github_com_ve-weiyi_blog-gin_api_app_types.SocialAccountInfo:
     properties:
       enabled:
         description: 是否启用
@@ -1224,7 +1224,7 @@ definitions:
         description: 平台-wechat
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo:
+  github_com_ve-weiyi_blog-gin_api_app_types.ThirdPlatformInfo:
     properties:
       authorize_url:
         description: 授权地址
@@ -1239,7 +1239,7 @@ definitions:
         description: 平台-wechat
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.Token:
+  github_com_ve-weiyi_blog-gin_api_app_types.Token:
     properties:
       access_token:
         description: 访问令牌：用于接口访问，有效期短
@@ -1260,13 +1260,13 @@ definitions:
         description: Token 类型（如 "Bearer"）
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.UnbindUserThirdPartyReq:
     properties:
       platform:
         description: 平台
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.UpdateUserProfileReq:
     properties:
       avatar:
         description: 头像URL
@@ -1284,7 +1284,7 @@ definitions:
         description: 网站
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq:
+  github_com_ve-weiyi_blog-gin_api_app_types.UploadFileReq:
     properties:
       file:
         description: 文件
@@ -1292,14 +1292,14 @@ definitions:
         description: 文件目录
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp:
+  github_com_ve-weiyi_blog-gin_api_app_types.UploadFileResp:
     properties:
       file_info:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.FileInfoVO'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.FileInfoVO'
         description: 文件信息
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO:
+  github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO:
     properties:
       avatar:
         type: string
@@ -1312,7 +1312,7 @@ definitions:
       username:
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo:
+  github_com_ve-weiyi_blog-gin_api_app_types.UserThirdPartyInfo:
     properties:
       avatar:
         description: 头像
@@ -1330,24 +1330,24 @@ definitions:
         description: 平台
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO:
+  github_com_ve-weiyi_blog-gin_api_app_types.WebsiteConfigVO:
     properties:
       admin_url:
         description: 后台地址
         type: string
       reward_qr_code:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RewardQrCode'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.RewardQrCode'
         description: 打赏二维码
       social_login_list:
         description: 用户第三方登录列表
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ThirdPlatformInfo'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ThirdPlatformInfo'
         type: array
       social_url_list:
         description: 作者社交地址列表
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SocialAccountInfo'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SocialAccountInfo'
         type: array
       tourist_avatar:
         description: 游客头像
@@ -1357,17 +1357,17 @@ definitions:
         type: string
       website_feature:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteFeature'
         description: 网站功能
       website_info:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteInfo'
         description: 网站信息
       websocket_url:
         description: websocket地址
         type: string
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteFeature:
+  github_com_ve-weiyi_blog-gin_api_app_types.WebsiteFeature:
     properties:
       is_ai_assistant:
         description: 是否开启AI助手
@@ -1391,7 +1391,7 @@ definitions:
         description: 是否开启打赏
         type: integer
     type: object
-  github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteInfo:
+  github_com_ve-weiyi_blog-gin_api_app_types.WebsiteInfo:
     properties:
       website_author:
         description: 网站作者
@@ -1501,7 +1501,7 @@ definitions:
       article_type:
         type: integer
       author:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO'
       category_name:
         type: string
       created_at:
@@ -2145,7 +2145,7 @@ definitions:
       page_list:
         description: 页面列表
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageVO'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageVO'
         type: array
       tag_count:
         description: 标签数量
@@ -2158,7 +2158,7 @@ definitions:
         type: integer
       website_config:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.WebsiteConfigVO'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.WebsiteConfigVO'
         description: 网站配置
     type: object
   types.GetMenuReq:
@@ -2348,7 +2348,7 @@ definitions:
       third_party:
         description: 第三方绑定
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserThirdPartyInfo'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserThirdPartyInfo'
         type: array
       user_id:
         description: 用户ID（UUID）
@@ -2548,11 +2548,11 @@ definitions:
   types.OnlineUserItem:
     properties:
       guest_info:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GuestInfoVO'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GuestInfoVO'
       last_active_at:
         type: integer
       user_info:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO'
     type: object
   types.OnlineUserListResp:
     properties:
@@ -2671,7 +2671,7 @@ definitions:
       list:
         description: 文件列表
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.FileInfoVO'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.FileInfoVO'
         type: array
       page:
         description: 当前页码
@@ -3140,7 +3140,7 @@ definitions:
         type: string
       user_info:
         allOf:
-        - $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UserInfoVO'
+        - $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UserInfoVO'
         description: 用户信息
     type: object
   types.TalkVO:
@@ -3168,7 +3168,7 @@ definitions:
       user_id:
         type: string
       user_info:
-        $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserInfoVO'
+        $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserInfoVO'
     type: object
   types.UpdateAlbumDeleteReq:
     properties:
@@ -3681,7 +3681,7 @@ definitions:
       third_party:
         description: 第三方绑定
         items:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UserThirdPartyInfo'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UserThirdPartyInfo'
         type: array
       updated_at:
         description: 更新时间（毫秒时间戳）
@@ -3729,12 +3729,12 @@ info:
     email: support@swagger.io
     name: API Support
     url: https://github.com/ve-weiyi
-  description: ve-blog-gin 博客系统 API 文档
+  description: blog-gin 博客系统 API 文档
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
-  termsOfService: https://github.com/ve-weiyi/ve-blog-gin
-  title: ve-blog-gin API
+  termsOfService: https://github.com/ve-weiyi/blog-gin
+  title: blog-gin API
   version: 1.0.0
 paths:
   /admin-api/v1/admin/get_about_me:
@@ -3745,7 +3745,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -3759,7 +3759,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -3773,12 +3773,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO'
   /admin-api/v1/admin/update_about_me:
     put:
       parameters:
@@ -3792,7 +3792,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/admin/update_website_config:
     put:
       parameters:
@@ -3801,12 +3801,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.WebsiteConfigVO'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.WebsiteConfigVO'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/album/create_album:
     post:
       parameters:
@@ -3843,7 +3843,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetAlbumReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetAlbumReq'
       responses:
         "200":
           description: 返回信息
@@ -3857,12 +3857,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryAlbumListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryAlbumListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/album/update_album:
     put:
       parameters:
@@ -3899,7 +3899,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -3960,7 +3960,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/api/sync_api:
     post:
       parameters:
@@ -3969,7 +3969,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -4030,7 +4030,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/article/get_article:
     get:
       parameters:
@@ -4039,7 +4039,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetArticleReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetArticleReq'
       responses:
         "200":
           description: 返回信息
@@ -4053,12 +4053,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryArticleListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryArticleListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/article/update_article:
     put:
       parameters:
@@ -4086,7 +4086,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/article/update_article_top:
     put:
       parameters:
@@ -4100,7 +4100,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/auth/captcha:
     get:
       parameters:
@@ -4109,12 +4109,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetCaptchaResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetCaptchaResp'
   /admin-api/v1/auth/login/email:
     post:
       parameters:
@@ -4123,12 +4123,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp'
   /admin-api/v1/auth/login/mobile:
     post:
       parameters:
@@ -4137,12 +4137,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.MobileLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.MobileLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp'
   /admin-api/v1/auth/login/password:
     post:
       parameters:
@@ -4151,12 +4151,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PasswordLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PasswordLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp'
   /admin-api/v1/auth/logout:
     post:
       parameters:
@@ -4165,12 +4165,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LogoutReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LogoutResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LogoutResp'
   /admin-api/v1/auth/oauth/:platform/authorize:
     get:
       parameters:
@@ -4179,12 +4179,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetOauthAuthorizeUrlResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetOauthAuthorizeUrlResp'
   /admin-api/v1/auth/oauth/:platform/login:
     post:
       parameters:
@@ -4193,12 +4193,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.OauthLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.OauthLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp'
   /admin-api/v1/auth/password/reset:
     post:
       parameters:
@@ -4207,12 +4207,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.ResetPasswordResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.ResetPasswordResp'
   /admin-api/v1/auth/refresh-token:
     post:
       parameters:
@@ -4221,12 +4221,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.RefreshTokenReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.RefreshTokenReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.LoginResp'
   /admin-api/v1/auth/register/email:
     post:
       parameters:
@@ -4235,12 +4235,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmailRegisterResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmailRegisterResp'
   /admin-api/v1/auth/send/email:
     post:
       parameters:
@@ -4249,12 +4249,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendEmailCodeResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendEmailCodeResp'
   /admin-api/v1/auth/send/mobile:
     post:
       parameters:
@@ -4263,12 +4263,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.SendMobileCodeResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.SendMobileCodeResp'
   /admin-api/v1/category/create_category:
     post:
       parameters:
@@ -4305,12 +4305,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCategoryListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryCategoryListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/category/update_category:
     put:
       parameters:
@@ -4347,12 +4347,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryCommentListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryCommentListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/comment/update_comment_status:
     put:
       parameters:
@@ -4403,12 +4403,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryFriendListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryFriendListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/friend/update_friend:
     put:
       parameters:
@@ -4431,12 +4431,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetGuestResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetGuestResp'
   /admin-api/v1/guest/query_guest_list:
     post:
       parameters:
@@ -4450,7 +4450,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/login_log/delete_login_log:
     delete:
       parameters:
@@ -4478,7 +4478,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/menu/clean_menu:
     post:
       parameters:
@@ -4548,7 +4548,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/menu/sync_menu:
     post:
       parameters:
@@ -4599,12 +4599,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryMessageListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryMessageListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/message/update_message_status:
     put:
       parameters:
@@ -4688,7 +4688,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/notify_message/revoke_notify_message:
     post:
       parameters:
@@ -4786,7 +4786,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/notify_record/query_user_inbox_record_list:
     post:
       parameters:
@@ -4856,7 +4856,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/notify_template/update_notify_template:
     put:
       parameters:
@@ -4898,7 +4898,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/page/create_page:
     post:
       parameters:
@@ -4912,7 +4912,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageVO'
   /admin-api/v1/page/delete_page:
     delete:
       parameters:
@@ -4935,12 +4935,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryPageListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryPageListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/page/update_page:
     put:
       parameters:
@@ -4954,7 +4954,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageVO'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageVO'
   /admin-api/v1/photo/create_photo:
     post:
       parameters:
@@ -4996,7 +4996,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/photo/update_photo:
     put:
       parameters:
@@ -5033,12 +5033,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PingReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PingResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PingResp'
   /admin-api/v1/role/create_role:
     post:
       parameters:
@@ -5108,7 +5108,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/role/update_role:
     put:
       parameters:
@@ -5136,7 +5136,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/role/update_role_menu_permissions:
     put:
       parameters:
@@ -5150,7 +5150,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/stats/get_article_analytics:
     get:
       parameters:
@@ -5159,7 +5159,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -5173,7 +5173,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -5243,12 +5243,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTagListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryTagListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/tag/update_tag:
     put:
       parameters:
@@ -5299,7 +5299,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetTalkReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetTalkReq'
       responses:
         "200":
           description: 返回信息
@@ -5313,12 +5313,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.QueryTalkListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.QueryTalkListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/talk/update_talk:
     put:
       parameters:
@@ -5341,12 +5341,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUploadTokenResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUploadTokenResp'
   /admin-api/v1/upload/query_file_list:
     post:
       parameters:
@@ -5369,12 +5369,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UploadFileResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UploadFileResp'
   /admin-api/v1/upload_log/delete_upload_log:
     delete:
       parameters:
@@ -5402,7 +5402,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/user/get_online_users:
     get:
       parameters:
@@ -5411,7 +5411,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -5439,12 +5439,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserEmailReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserEmailReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/me/bind_user_phone:
     post:
       parameters:
@@ -5453,12 +5453,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserPhoneReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserPhoneReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/me/bind_user_third_party:
     post:
       parameters:
@@ -5467,12 +5467,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.BindUserThirdPartyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.BindUserThirdPartyReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/me/get_user_apis:
     get:
       parameters:
@@ -5481,7 +5481,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -5495,7 +5495,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -5509,7 +5509,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.GetUserProfileReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.GetUserProfileReq'
       responses:
         "200":
           description: 返回信息
@@ -5523,7 +5523,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyReq'
       responses:
         "200":
           description: 返回信息
@@ -5542,7 +5542,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/user/me/unbind_user_third_party:
     post:
       parameters:
@@ -5551,12 +5551,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UnbindUserThirdPartyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UnbindUserThirdPartyReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/me/update_user_avatar:
     put:
       parameters:
@@ -5570,7 +5570,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/me/update_user_password:
     put:
       parameters:
@@ -5584,7 +5584,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/me/update_user_profile:
     put:
       parameters:
@@ -5593,12 +5593,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.UpdateUserProfileReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.UpdateUserProfileReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.EmptyResp'
   /admin-api/v1/user/query_user_list:
     post:
       parameters:
@@ -5612,7 +5612,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/user/reset_user_password:
     post:
       parameters:
@@ -5682,7 +5682,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_admin_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_admin_types.PageResult'
   /admin-api/v1/websocket:
     get:
       responses: {}
@@ -5694,7 +5694,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetAlbumReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetAlbumReq'
       responses:
         "200":
           description: 返回信息
@@ -5708,12 +5708,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryAlbumListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryAlbumListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/album/query_album_photo_list:
     post:
       parameters:
@@ -5727,7 +5727,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/article/get_article:
     get:
       parameters:
@@ -5736,7 +5736,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetArticleReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetArticleReq'
       responses:
         "200":
           description: 返回信息
@@ -5755,7 +5755,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/article/query_archived_article_list:
     post:
       parameters:
@@ -5769,7 +5769,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/article/query_article_list:
     post:
       parameters:
@@ -5778,12 +5778,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryArticleListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryArticleListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/article/query_recommend_article_list:
     post:
       parameters:
@@ -5797,7 +5797,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/auth/captcha:
     get:
       parameters:
@@ -5806,12 +5806,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetCaptchaResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetCaptchaResp'
   /api/v1/auth/login/email:
     post:
       parameters:
@@ -5820,12 +5820,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp'
   /api/v1/auth/login/mobile:
     post:
       parameters:
@@ -5834,12 +5834,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.MobileLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.MobileLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp'
   /api/v1/auth/login/password:
     post:
       parameters:
@@ -5848,12 +5848,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PasswordLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PasswordLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp'
   /api/v1/auth/logout:
     post:
       parameters:
@@ -5862,12 +5862,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LogoutReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LogoutResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LogoutResp'
   /api/v1/auth/oauth/:platform/authorize:
     get:
       parameters:
@@ -5876,12 +5876,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetOauthAuthorizeUrlResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetOauthAuthorizeUrlResp'
   /api/v1/auth/oauth/:platform/login:
     post:
       parameters:
@@ -5890,12 +5890,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.OauthLoginReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.OauthLoginReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp'
   /api/v1/auth/password/reset:
     post:
       parameters:
@@ -5904,12 +5904,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.ResetPasswordResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.ResetPasswordResp'
   /api/v1/auth/refresh-token:
     post:
       parameters:
@@ -5918,12 +5918,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.RefreshTokenReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.RefreshTokenReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.LoginResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.LoginResp'
   /api/v1/auth/register/email:
     post:
       parameters:
@@ -5932,12 +5932,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmailRegisterResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmailRegisterResp'
   /api/v1/auth/send/email:
     post:
       parameters:
@@ -5946,12 +5946,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendEmailCodeResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendEmailCodeResp'
   /api/v1/auth/send/mobile:
     post:
       parameters:
@@ -5960,12 +5960,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.SendMobileCodeResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.SendMobileCodeResp'
   /api/v1/blog:
     get:
       parameters:
@@ -6002,12 +6002,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCategoryListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCategoryListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/comment/create_comment:
     post:
       parameters:
@@ -6021,7 +6021,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/comment/like_comment:
     post:
       parameters:
@@ -6035,7 +6035,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/comment/query_comment_list:
     post:
       parameters:
@@ -6044,12 +6044,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/comment/query_comment_reply_list:
     post:
       parameters:
@@ -6063,7 +6063,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/comment/query_recent_comment_list:
     post:
       parameters:
@@ -6072,12 +6072,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryCommentListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryCommentListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/comment/update_comment:
     put:
       parameters:
@@ -6091,7 +6091,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/friend/query_friend_list:
     post:
       parameters:
@@ -6100,12 +6100,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryFriendListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryFriendListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/guest/get_guest:
     get:
       parameters:
@@ -6114,12 +6114,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetGuestReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetGuestResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetGuestResp'
   /api/v1/message/create_message:
     post:
       parameters:
@@ -6133,7 +6133,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/message/query_message_list:
     post:
       parameters:
@@ -6142,12 +6142,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryMessageListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryMessageListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/page/query_page_list:
     post:
       parameters:
@@ -6156,12 +6156,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryPageListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryPageListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/ping:
     get:
       parameters:
@@ -6170,12 +6170,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PingReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PingResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PingResp'
   /api/v1/tag/query_tag_list:
     post:
       parameters:
@@ -6184,12 +6184,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTagListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryTagListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/talk/get_talk:
     get:
       parameters:
@@ -6198,7 +6198,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetTalkReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetTalkReq'
       responses:
         "200":
           description: 返回信息
@@ -6217,7 +6217,7 @@ paths:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/talk/query_talk_list:
     post:
       parameters:
@@ -6226,12 +6226,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.QueryTalkListReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.QueryTalkListReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.PageResult'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.PageResult'
   /api/v1/upload/get_upload_token:
     post:
       parameters:
@@ -6240,12 +6240,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUploadTokenResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUploadTokenResp'
   /api/v1/upload/upload_file:
     post:
       parameters:
@@ -6254,12 +6254,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UploadFileReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UploadFileResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UploadFileResp'
   /api/v1/user/me/bind_user_email:
     post:
       parameters:
@@ -6268,12 +6268,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserEmailReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserEmailReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/user/me/bind_user_phone:
     post:
       parameters:
@@ -6282,12 +6282,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserPhoneReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserPhoneReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/user/me/bind_user_third_party:
     post:
       parameters:
@@ -6296,12 +6296,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.BindUserThirdPartyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.BindUserThirdPartyReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/user/me/deactivate_account:
     post:
       parameters:
@@ -6338,7 +6338,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.GetUserProfileReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.GetUserProfileReq'
       responses:
         "200":
           description: 返回信息
@@ -6366,12 +6366,12 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UnbindUserThirdPartyReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UnbindUserThirdPartyReq'
       responses:
         "200":
           description: 返回信息
           schema:
-            $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.EmptyResp'
+            $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.EmptyResp'
   /api/v1/user/me/update_user_profile:
     put:
       parameters:
@@ -6380,7 +6380,7 @@ paths:
         name: data
         required: true
         schema:
-          $ref: '#/definitions/github_com_ve-weiyi_ve-blog-gin_api_app_types.UpdateUserProfileReq'
+          $ref: '#/definitions/github_com_ve-weiyi_blog-gin_api_app_types.UpdateUserProfileReq'
       responses:
         "200":
           description: 返回信息

@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>ve-blog-gin</h1>
+  <h1>blog-gin</h1>
   <p>基于 Go + Gin + GORM 的博客后端，适合新手学习</p>
 
   <img src="https://img.shields.io/badge/Go-1.26-blue?logo=go" />
@@ -27,9 +27,9 @@
 
 ## 项目简介
 
-ve-blog-gin 是 ve-blog 博客系统的 Gin 框架版后端，基于 Go + Gin + GORM + MySQL + Redis 构建。覆盖认证鉴权、内容管理、权限控制、日志审计等完整后端功能。
+blog-gin 是 blog 博客系统的 Gin 框架版后端，基于 Go + Gin + GORM + MySQL + Redis 构建。覆盖认证鉴权、内容管理、权限控制、日志审计等完整后端功能。
 
-与 [ve-blog-golang](https://github.com/ve-weiyi/ve-blog-golang)（go-zero 微服务版）共用相同数据库和前端，适合对照学习两套框架的架构差异。
+与 [blog-cloud](https://github.com/ve-weiyi/blog-cloud)（go-zero 微服务版）共用相同数据库和前端，适合对照学习两套框架的架构差异。
 
 ### 核心亮点
 
@@ -37,7 +37,7 @@ ve-blog-gin 是 ve-blog 博客系统的 Gin 框架版后端，基于 Go + Gin + 
 - **分层清晰** — `api/` 封装 HTTP 层，`infra/` 放基础设施，依赖方向单向流动
 - **完整鉴权体系** — JWT 认证 + RBAC 角色权限 + 按钮级鉴权，中间件链清晰可追踪
 - **功能完备** — 内容管理、社交互动、通知推送、日志审计、数据统计，与 go-zero 版功能对齐
-- **前后端统一** — 完全兼容 ve-blog-naive 和 ve-admin-element 两个前端项目的 API 接口
+- **前后端统一** — 完全兼容 blog-naive 和 admin-element 两个前端项目的 API 接口
 
 ## 技术栈
 
@@ -73,17 +73,17 @@ ve-blog-gin 是 ve-blog 博客系统的 Gin 框架版后端，基于 Go + Gin + 
 
 ## 项目源码
 
-| 项目                                                               | 说明 |
-|------------------------------------------------------------------|------|
-| [ve-blog-golang](https://github.com/ve-weiyi/ve-blog-golang)     | go-zero 微服务版后端 |
-| [ve-blog-gin](https://github.com/ve-weiyi/ve-blog-gin)           | Gin 单体版后端（本项目） |
-| [ve-blog-naive](https://github.com/ve-weiyi/ve-blog-naive)       | 博客前台 |
-| [ve-admin-element](https://github.com/ve-weiyi/ve-admin-element) | 博客后台管理 |
+| 项目                                                 | 说明 |
+|------------------------------------------------------|------|
+| [blog-cloud](https://github.com/ve-weiyi/blog-cloud) | go-zero 微服务版后端 |
+| [blog-gin](https://github.com/ve-weiyi/blog-gin)     | Gin 单体版后端（本项目） |
+| [blog-app](https://github.com/ve-weiyi/blog-app)     | 博客前台 |
+| [blog-admin](https://github.com/ve-weiyi/blog-admin) | 博客后台管理 |
 
 ## 项目结构
 
 ```
-ve-blog-gin/
+blog-gin/
 ├── main.go                       # 入口：加载配置 → 初始化服务 → 启动 HTTP
 ├── cmd/                          # Cobra CLI 命令
 ├── config/                       # 配置结构体 + 加载（file/nacos）
@@ -152,7 +152,7 @@ main.go
 
 ```bash
 # 1. 克隆
-git clone https://github.com/ve-weiyi/ve-blog-gin.git && cd ve-blog-gin
+git clone https://github.com/ve-weiyi/blog-gin.git && cd blog-gin
 
 # 2. 启动依赖服务（MySQL、Redis）
 docker compose -f deploy/docker-compose/docker-compose.yaml up -d mysql redis
@@ -179,8 +179,8 @@ go run main.go -nacos-host ve-weiyi.cn -nacos-port 8848 -nacos-namespace dev
 
 ```bash
 # Docker 构建 & 运行
-docker build -f deploy/docker/Dockerfile -t ve-blog-gin:latest .
-docker run -d --name ve-blog-gin -p 8080:8080 -v ./config.yaml:/app/config.yaml ve-blog-gin:latest
+docker build -f deploy/docker/Dockerfile -t blog-gin:latest .
+docker run -d --name blog-gin -p 8080:8080 -v ./config.yaml:/app/config.yaml blog-gin:latest
 
 # 或使用 Docker Compose
 cd deploy/docker-compose && docker compose up -d

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ve-weiyi/ve-blog-gin/config"
+	"github.com/ve-weiyi/blog-gin/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

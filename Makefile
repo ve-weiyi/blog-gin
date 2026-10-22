@@ -1,6 +1,6 @@
 .PHONY: help deps swag run build clean test lint
 
-BIN_NAME := ve-blog-gin
+BIN_NAME := blog-gin
 
 help:
 	@echo "可用命令："

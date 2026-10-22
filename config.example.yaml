@@ -5,9 +5,9 @@ system:
   runtime-path: ./runtime
 
 jwt:
-  access_secret: ve-blog-access-secret
+  access_secret: blog-access-secret
   access_expire: 7200
-  refresh_secret: ve-blog-refresh-secret
+  refresh_secret: blog-refresh-secret
   refresh_expire: 604800
 
 mysql:
@@ -15,7 +15,7 @@ mysql:
   port: "3306"
   username: root
   password: "123456"
-  Database: ve-blog
+  Database: blog
   config: charset=utf8mb4&parseTime=True&loc=Local
 
 redis:

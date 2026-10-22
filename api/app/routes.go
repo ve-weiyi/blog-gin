@@ -2,8 +2,8 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ve-weiyi/ve-blog-gin/api/app/router"
-	"github.com/ve-weiyi/ve-blog-gin/svctx"
+	"github.com/ve-weiyi/blog-gin/api/app/router"
+	"github.com/ve-weiyi/blog-gin/svctx"
 )
 
 func RegisterHandlers(r *gin.RouterGroup, svcCtx *svctx.ServiceContext) {

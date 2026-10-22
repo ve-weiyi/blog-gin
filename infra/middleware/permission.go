@@ -3,10 +3,10 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizcode"
-	"github.com/ve-weiyi/ve-blog-gin/infra/biz/bizerr"
-	"github.com/ve-weiyi/ve-blog-gin/infra/middleware/permissionx"
-	"github.com/ve-weiyi/ve-blog-gin/infra/response"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizcode"
+	"github.com/ve-weiyi/blog-gin/infra/biz/bizerr"
+	"github.com/ve-weiyi/blog-gin/infra/middleware/permissionx"
+	"github.com/ve-weiyi/blog-gin/infra/response"
 )
 
 // Permission 权限拦截中间件

@@ -8,7 +8,7 @@ import (
 
 	amqp "github.com/rabbitmq/amqp091-go"
 
-	"github.com/ve-weiyi/ve-blog-gin/config"
+	"github.com/ve-weiyi/blog-gin/config"
 )
 
 // RabbitMQ 创建 RabbitMQ 连接，带自动重连
